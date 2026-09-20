@@ -1,0 +1,12 @@
+# ОС и IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# Локальные результаты экспериментов
+hw_1_1/map-reduce-infra/notebooks/hw_1_1/local_output/
+hw_1_1/map-reduce-infra/notebooks/hw_1_1/*.log

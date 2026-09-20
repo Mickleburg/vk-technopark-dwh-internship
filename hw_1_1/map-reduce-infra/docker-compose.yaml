@@ -1,0 +1,95 @@
+services:
+  namenode:
+    networks:
+      - spark_mts
+    image: mirror.gcr.io/apache/hadoop:3.4.1
+    hostname: namenode
+    command: ["hdfs", "namenode"]
+    ports:
+      - 9870:9870
+    env_file:
+      - ./config
+    environment:
+        ENSURE_NAMENODE_DIR: "/tmp/hadoop-root/dfs/name"
+
+  datanode1:
+    networks:
+      - spark_mts
+    ports:
+      - 8042:8042
+    image: mirror.gcr.io/apache/hadoop:3.4.1
+    command: ["hdfs", "datanode"]
+    volumes:
+      - datanode1:/hadoop/dfs/data
+    env_file:
+      - ./config
+
+  datanode2:
+    networks:
+      - spark_mts
+    image: mirror.gcr.io/apache/hadoop:3.4.1
+    command: ["hdfs", "datanode"]
+    volumes:
+      - datanode2:/hadoop/dfs/data
+    env_file:
+      - ./config
+
+  resourcemanager:
+    networks:
+      - spark_mts
+    image: mirror.gcr.io/apache/hadoop:3.4.1
+    hostname: resourcemanager
+    command: ["yarn", "resourcemanager"]
+    ports:
+       - 8088:8088
+    env_file:
+      - ./config
+
+  nodemanager1:
+    build:
+      context: .
+      dockerfile: dockerfile.hadoop
+    networks:
+      - spark_mts
+    # image: mirror.gcr.io/apache/hadoop:3.4.1
+    command: ["yarn", "nodemanager"]
+    env_file:
+      - ./config
+
+  nodemanager2:
+    build:
+      context: .
+      dockerfile: dockerfile.hadoop
+    networks:
+      - spark_mts
+    # image: mirror.gcr.io/apache/hadoop:3.4.1
+    command: ["yarn", "nodemanager"]
+    env_file:
+      - ./config
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: dockerfile.jupyter
+    networks:
+      - spark_mts
+    ports:
+      - 8889:8888
+    environment:
+      HADOOP_CONF_DIR: /etc/hadoop
+      HADOOP_USER_NAME: hadoop
+    volumes:
+      - ./hadoop-config:/etc/hadoop
+      - ./notebooks:/home/jovyan/work
+      - ../data:/home/jovyan/work/hw_1_1/data:ro
+    depends_on:
+      - namenode
+      - datanode1
+      - datanode2
+
+networks:
+  spark_mts:
+
+volumes:
+  datanode1:
+  datanode2:
