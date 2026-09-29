@@ -1,0 +1,259 @@
+services:
+  namenode:
+    networks:
+      - spark_mts
+    image: mirror.gcr.io/apache/hadoop:3.3.6
+    hostname: namenode
+    user: root
+    command: >
+      bash -c "
+        if [ ! -d /hadoop/dfs/name/current ]; then
+          echo 'Formatting NameNode...'
+          hdfs namenode -format -force
+        fi &&
+        hdfs namenode
+      "
+    ports:
+      - 9870:9870
+    env_file:
+      - ./config.env
+    volumes:
+      - namenode_data:/hadoop/dfs/name
+    environment:
+      ENSURE_NAMENODE_DIR: "/hadoop/dfs/name"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9870"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  datanode1:
+    networks:
+      - spark_mts
+    ports:
+      - 9864:9864
+    user: root
+    image: mirror.gcr.io/apache/hadoop:3.3.6
+    command: ["hdfs", "datanode"]
+    volumes:
+      - datanode1_data:/hadoop/dfs/data
+    env_file:
+      - ./config.env
+    depends_on:
+      namenode:
+        condition: service_healthy
+
+  datanode2:
+    networks:
+      - spark_mts
+    ports:
+      - 9865:9864  # Different host port
+    user: root
+    image: mirror.gcr.io/apache/hadoop:3.3.6
+    command: ["hdfs", "datanode"]
+    volumes:
+      - datanode2_data:/hadoop/dfs/data
+    env_file:
+      - ./config.env
+    depends_on:
+      namenode:
+        condition: service_healthy
+    
+  hdfs-init:
+    image: mirror.gcr.io/apache/hadoop:3.3.6
+    hostname: hdfs-init
+    networks:
+      - spark_mts
+    depends_on:
+      namenode:
+        condition: service_healthy
+    env_file:
+      - ./config.env
+    command: >
+      bash -c "
+        echo 'Waiting for NameNode...' &&
+        sleep 10 &&
+        hdfs dfsadmin -safemode wait &&
+        echo 'Creating Hive warehouse directories in HDFS...' &&
+        hdfs dfs -mkdir -p /user/hive/warehouse &&
+        hdfs dfs -chmod -R 777 /user/hive/warehouse &&
+        echo 'HDFS initialization complete.'
+      "
+    restart: "no"
+
+  postgres:
+    networks:
+      - spark_mts
+    image: postgres:11
+    hostname: hive-metastore-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=hive
+      - POSTGRES_PASSWORD=hive
+      - POSTGRES_DB=metastore
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hive"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  metastore:
+    user: root
+    networks:
+      - spark_mts
+    image: apache/hive:3.1.3
+    ports:
+      - 9083:9083
+    depends_on:
+      - postgres
+    environment:
+      SERVICE_NAME: metastore
+      DB_DRIVER: postgres
+      # HIVE_CUSTOM_CONF_DIR: /hive_custom_conf
+      SERVICE_OPTS: >-
+        -Djavax.jdo.option.ConnectionDriverName=org.postgresql.Driver
+        -Djavax.jdo.option.ConnectionURL=jdbc:postgresql://postgres:5432/metastore
+        -Djavax.jdo.option.ConnectionUserName=hive
+        -Djavax.jdo.option.ConnectionPassword=hive            
+    volumes:
+      - /Users/e.bulatov/Downloads/postgresql-42.7.7.jar:/opt/hive/lib/postgres.jar
+
+  # ---------------------- #
+  # Spark Master
+  # ---------------------- #
+  spark-master:
+    image: apache/spark:3.5.3
+    container_name: spark-master
+    command: >
+      bash -c "
+        /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+        --host spark-master
+        --port 7077
+        --webui-port 8080
+      "
+    environment:
+      - SPARK_MODE=master
+      - SPARK_LOG_LEVEL=INFO
+      - SPARK_EVENTLOG_ENABLED=true
+      - SPARK_EVENTLOG_DIR=hdfs://namenode:9000/spark-history
+      - SPARK_NO_DAEMONIZE=true
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+    depends_on:
+      - namenode
+      # - hiveserver2-standalone
+    networks:
+      - spark_mts
+
+  # ---------------------- #
+  # Spark Workers
+  # ---------------------- #
+  spark-worker-1:
+    image: apache/spark:3.5.3
+    container_name: spark-worker-1
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077", "--webui-port", "8081"]
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_LOG_LEVEL=INFO
+      - SPARK_EVENTLOG_ENABLED=true
+      - SPARK_EVENTLOG_DIR=hdfs://namenode:9000/spark-history
+      - SPARK_NO_DAEMONIZE=true
+    depends_on:
+      - spark-master
+    ports:
+      - "8081:8081"
+    networks:
+      - spark_mts
+
+  spark-worker-2:
+    image: apache/spark:3.5.3
+    container_name: spark-worker-2
+    command: ["/opt/spark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark-master:7077", "--webui-port", "8081"]
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_LOG_LEVEL=INFO
+      - SPARK_EVENTLOG_ENABLED=true
+      - SPARK_EVENTLOG_DIR=hdfs://namenode:9000/spark-history
+      - SPARK_NO_DAEMONIZE=true
+    depends_on:
+      - spark-master
+    ports:
+      - "8082:8082"
+    networks:
+      - spark_mts
+
+
+  # ---------------------- #
+  # Spark History Server
+  # ---------------------- #
+  spark-history-server:
+    image: apache/spark:3.5.3
+    container_name: spark-history
+    command: >
+      bash -c "
+        /opt/spark/sbin/start-history-server.sh &&
+        tail -f /dev/null
+      "
+    environment:
+      - SPARK_HISTORY_OPTS=-Dspark.history.fs.logDirectory=hdfs://namenode:9000/spark-history
+      - SPARK_HISTORY_UI_PORT=18080
+      - SPARK_LOG_LEVEL=INFO
+    depends_on:
+      - namenode
+    ports:
+      - "18080:18080"
+    networks:
+      - spark_mts
+
+  # ---------------------- #
+  # Jupyter Notebook
+  # ---------------------- #
+  jupyter:
+    user: root
+    build:
+      context: .
+      dockerfile: dockerfile.jupyter
+    networks:
+      - spark_mts
+    hostname: jupyter
+    ports:
+      - 8888:8888
+      - 4040:4040
+      - 4041:4041
+    environment:
+      SPARK_MASTER: spark://spark-master:7077
+      HADOOP_CONF_DIR: /etc/hadoop
+      HADOOP_USER_NAME: hadoop
+      JAVA_HOME: /usr/lib/jvm/java-8-openjdk-arm64
+    volumes:
+      - ./hadoop-config:/etc/hadoop:ro
+      - ./notebooks:/home/jovyan/work
+    depends_on:
+      - spark-master
+      - namenode
+      # - hiveserver2-standalone
+
+networks:
+  spark_mts:
+
+volumes:
+  namenode_data:
+  datanode1_data:
+  datanode2_data:
+  postgres_data:
+  hive_metastore_data:
+  hive_server_data:
+  spark-events:
+
+
+
+
+
