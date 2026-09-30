@@ -7,6 +7,13 @@ RUN apt-get update && apt-get install -y wget openjdk-8-jdk
 
 RUN pip install --no-cache-dir --upgrade --force-reinstall pyspark==3.5.0
 
+RUN conda create -y -n spark-py38 python=3.8 pip ipykernel && \
+    /opt/conda/envs/spark-py38/bin/pip install --no-cache-dir pyspark==3.5.0 && \
+    /opt/conda/envs/spark-py38/bin/python -m ipykernel install \
+      --prefix=/opt/conda \
+      --name spark-py38 \
+      --display-name "PySpark 3.5 (Python 3.8)"
+
 # Установка Hadoop
 RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz && \
     tar -xzvf hadoop-3.4.1.tar.gz -C /opt/ && \
