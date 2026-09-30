@@ -5,6 +5,8 @@ USER root
 # Установка Java и wget
 RUN apt-get update && apt-get install -y wget openjdk-8-jdk
 
+RUN pip install --no-cache-dir --upgrade --force-reinstall pyspark==3.5.0
+
 # Установка Hadoop
 RUN wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz && \
     tar -xzvf hadoop-3.4.1.tar.gz -C /opt/ && \
