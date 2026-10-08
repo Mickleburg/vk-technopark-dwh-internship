@@ -1,0 +1,4 @@
+FROM quay.io/jupyter/scipy-notebook:2026-07-28
+
+COPY requirements.txt /tmp/clickhouse-requirements.txt
+RUN pip install --no-cache-dir -r /tmp/clickhouse-requirements.txt

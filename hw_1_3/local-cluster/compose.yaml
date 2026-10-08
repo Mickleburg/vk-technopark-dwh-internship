@@ -1,0 +1,109 @@
+name: clickhouse-homework
+
+x-server: &server
+  image: clickhouse/clickhouse-server:25.8
+  restart: unless-stopped
+  environment:
+    CLICKHOUSE_SKIP_USER_SETUP: "1"
+  ulimits:
+    nofile:
+      soft: 262144
+      hard: 262144
+  depends_on:
+    keeper:
+      condition: service_started
+  healthcheck:
+    test: ["CMD", "clickhouse-client", "--password", "homework", "--query", "SELECT 1"]
+    interval: 5s
+    timeout: 5s
+    retries: 60
+    start_period: 20s
+
+services:
+  keeper:
+    image: clickhouse/clickhouse-keeper:25.8
+    restart: unless-stopped
+    volumes:
+      - ./config/keeper.xml:/etc/clickhouse-keeper/keeper_config.xml:ro
+      - keeper-data:/var/lib/clickhouse/coordination
+
+  ch11:
+    <<: *server
+    hostname: ch11
+    ports:
+      - "127.0.0.1:8123:8123"
+      - "127.0.0.1:9000:9000"
+    volumes:
+      - ch11-data:/var/lib/clickhouse
+      - ./config/cluster.xml:/etc/clickhouse-server/config.d/cluster.xml:ro
+      - ./config/users.xml:/etc/clickhouse-server/users.d/homework.xml:ro
+      - ./config/ch11.xml:/etc/clickhouse-server/config.d/macros.xml:ro
+
+  ch12:
+    <<: *server
+    hostname: ch12
+    ports:
+      - "127.0.0.1:8124:8123"
+      - "127.0.0.1:9001:9000"
+    volumes:
+      - ch12-data:/var/lib/clickhouse
+      - ./config/cluster.xml:/etc/clickhouse-server/config.d/cluster.xml:ro
+      - ./config/users.xml:/etc/clickhouse-server/users.d/homework.xml:ro
+      - ./config/ch12.xml:/etc/clickhouse-server/config.d/macros.xml:ro
+
+  ch21:
+    <<: *server
+    hostname: ch21
+    ports:
+      - "127.0.0.1:8125:8123"
+      - "127.0.0.1:9002:9000"
+    volumes:
+      - ch21-data:/var/lib/clickhouse
+      - ./config/cluster.xml:/etc/clickhouse-server/config.d/cluster.xml:ro
+      - ./config/users.xml:/etc/clickhouse-server/users.d/homework.xml:ro
+      - ./config/ch21.xml:/etc/clickhouse-server/config.d/macros.xml:ro
+
+  ch22:
+    <<: *server
+    hostname: ch22
+    ports:
+      - "127.0.0.1:8126:8123"
+      - "127.0.0.1:9003:9000"
+    volumes:
+      - ch22-data:/var/lib/clickhouse
+      - ./config/cluster.xml:/etc/clickhouse-server/config.d/cluster.xml:ro
+      - ./config/users.xml:/etc/clickhouse-server/users.d/homework.xml:ro
+      - ./config/ch22.xml:/etc/clickhouse-server/config.d/macros.xml:ro
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile.jupyter
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8890:8888"
+    environment:
+      JUPYTER_TOKEN: homework
+      CLICKHOUSE_HOST: ch11
+      CLICKHOUSE_PORT: "8123"
+      CLICKHOUSE_USER: default
+      CLICKHOUSE_PASSWORD: homework
+    command: ["start-notebook.py", "--ServerApp.root_dir=/home/jovyan/work"]
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    depends_on:
+      ch11:
+        condition: service_healthy
+      ch12:
+        condition: service_healthy
+      ch21:
+        condition: service_healthy
+      ch22:
+        condition: service_healthy
+
+volumes:
+  keeper-data:
+  ch11-data:
+  ch12-data:
+  ch21-data:
+  ch22-data:

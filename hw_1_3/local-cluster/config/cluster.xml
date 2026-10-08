@@ -1,0 +1,30 @@
+<clickhouse>
+    <listen_host replace="replace">0.0.0.0</listen_host>
+    <logger><level>warning</level><console>true</console></logger>
+    <max_server_memory_usage>2000000000</max_server_memory_usage>
+    <remote_servers replace="replace">
+        <homework_cluster>
+            <shard>
+                <internal_replication>true</internal_replication>
+                <replica><host>ch11</host><port>9000</port><user>default</user><password>homework</password></replica>
+                <replica><host>ch12</host><port>9000</port><user>default</user><password>homework</password></replica>
+            </shard>
+            <shard>
+                <internal_replication>true</internal_replication>
+                <replica><host>ch21</host><port>9000</port><user>default</user><password>homework</password></replica>
+                <replica><host>ch22</host><port>9000</port><user>default</user><password>homework</password></replica>
+            </shard>
+        </homework_cluster>
+        <!-- Plain ReplacingMergeTree: one node per shard, no replication. -->
+        <homework_dedup_cluster>
+            <shard>
+                <replica><host>ch11</host><port>9000</port><user>default</user><password>homework</password></replica>
+            </shard>
+            <shard>
+                <replica><host>ch21</host><port>9000</port><user>default</user><password>homework</password></replica>
+            </shard>
+        </homework_dedup_cluster>
+    </remote_servers>
+    <zookeeper><node><host>keeper</host><port>9181</port></node></zookeeper>
+    <distributed_ddl><path>/clickhouse/task_queue/ddl</path></distributed_ddl>
+</clickhouse>
