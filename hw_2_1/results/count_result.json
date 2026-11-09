@@ -1,0 +1,4 @@
+{
+  "query": "SELECT count(*) AS scd2_rows\nFROM users_scd2;\n",
+  "scd2_rows": 322
+}

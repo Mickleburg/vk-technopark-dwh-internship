@@ -1,0 +1,10 @@
+{
+  "source_rows": 5376,
+  "users": 268,
+  "changes": 54,
+  "scd2_rows": 322,
+  "snapshot_sha256": "18e146eff547957ab6bd842ac68caf64d15e952eb4bfbf8f056733f6adf6da56",
+  "rerun_equal": true,
+  "independent_reference_equal": true,
+  "invariants_passed": true
+}

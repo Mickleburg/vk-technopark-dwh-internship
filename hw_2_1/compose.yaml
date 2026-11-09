@@ -1,0 +1,40 @@
+name: dwh-hw-2-1
+
+services:
+  rustfs:
+    image: rustfs/rustfs@sha256:ed9210d6411d77ffceb70d94b964a3cb7d225983368bc25bebe01e995293dcc2
+    command: ["/data"]
+    environment:
+      RUSTFS_ACCESS_KEY: homework
+      RUSTFS_SECRET_KEY: homework-scd2-local
+      RUSTFS_CONSOLE_ENABLE: "true"
+      RUSTFS_ADDRESS: "0.0.0.0:9000"
+      RUSTFS_CONSOLE_ADDRESS: "0.0.0.0:9001"
+    ports:
+      - "127.0.0.1:9100:9000"
+      - "127.0.0.1:9101:9001"
+    volumes:
+      - rustfs-data:/data
+
+  jupyter:
+    build: .
+    environment:
+      S3_ENDPOINT: http://rustfs:9000
+      AWS_ACCESS_KEY_ID: homework
+      AWS_SECRET_ACCESS_KEY: homework-scd2-local
+      AWS_DEFAULT_REGION: us-east-1
+      PYSPARK_PYTHON: python
+      SPARK_LOCAL_IP: 127.0.0.1
+    ports:
+      - "127.0.0.1:8891:8888"
+      - "127.0.0.1:4041:4040"
+    volumes:
+      - .:/work
+      - ../references:/references:ro
+    depends_on:
+      - rustfs
+    working_dir: /work
+    command: ["jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--ServerApp.root_dir=/work", "--IdentityProvider.token=homework"]
+
+volumes:
+  rustfs-data:

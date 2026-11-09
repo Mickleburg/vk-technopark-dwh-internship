@@ -1,0 +1,40 @@
+[
+  {
+    "case": "before_first",
+    "user_id": 24,
+    "as_of": "2026-09-01 00:12:13.999999",
+    "result": []
+  },
+  {
+    "case": "at_first",
+    "user_id": 24,
+    "as_of": "2026-09-01 00:12:14",
+    "result": [
+      "dmitchell24"
+    ]
+  },
+  {
+    "case": "before_change",
+    "user_id": 24,
+    "as_of": "2026-09-01 01:20:28.999999",
+    "result": [
+      "dmitchell24"
+    ]
+  },
+  {
+    "case": "at_change",
+    "user_id": 24,
+    "as_of": "2026-09-01 01:20:29",
+    "result": [
+      "twalker24r2"
+    ]
+  },
+  {
+    "case": "current",
+    "user_id": 24,
+    "as_of": "2026-09-02 01:20:29",
+    "result": [
+      "twalker24r2"
+    ]
+  }
+]

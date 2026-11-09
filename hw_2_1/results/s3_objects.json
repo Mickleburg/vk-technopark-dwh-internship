@@ -1,0 +1,38 @@
+[
+  {
+    "key": "source/event_log/_manifest.json",
+    "bytes": 431
+  },
+  {
+    "key": "source/event_log/events_00001.csv",
+    "bytes": 81019
+  },
+  {
+    "key": "source/event_log/events_00002.csv",
+    "bytes": 81228
+  },
+  {
+    "key": "source/event_log/events_00003.csv",
+    "bytes": 81007
+  },
+  {
+    "key": "source/event_log/events_00004.csv",
+    "bytes": 81010
+  },
+  {
+    "key": "source/event_log/events_00005.csv",
+    "bytes": 81343
+  },
+  {
+    "key": "source/event_log/events_00006.csv",
+    "bytes": 30667
+  },
+  {
+    "key": "target/users_scd2/_SUCCESS",
+    "bytes": 0
+  },
+  {
+    "key": "target/users_scd2/part-00000-3e7cc903-858b-43cc-8c22-9c13aae957a1-c000.snappy.parquet",
+    "bytes": 17123
+  }
+]

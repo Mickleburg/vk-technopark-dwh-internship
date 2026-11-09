@@ -1,0 +1,21 @@
+{
+  "format": "csv",
+  "columns": [
+    "event_time",
+    "user_id",
+    "user_fio",
+    "user_email",
+    "user_login"
+  ],
+  "total_rows": 5376,
+  "rows_per_file": 1000,
+  "file_count": 6,
+  "user_count": 268,
+  "user_id_start": 1,
+  "change_probability": 0.01,
+  "applied_profile_changes": 54,
+  "seed": 42,
+  "first_event_time": "2026-09-01T00:00:03Z",
+  "last_event_time": "2026-09-01T03:01:23Z",
+  "elapsed_seconds": 0.142
+}
