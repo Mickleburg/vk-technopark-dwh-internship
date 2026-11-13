@@ -1,0 +1,15 @@
+event_time,user_id,user_fio,user_email,user_login
+2026-01-25T00:00:00Z,1002,Bob Two,bob@post.example,bob
+2026-01-25T18:00:00Z,1001,Alicia One,alice@mail.example,alice
+2026-01-24T09:00:00Z,1001,Alicia One,alice@mail.example,alice
+2026-01-25T23:59:59Z,1004,Dan Four,dan@example.com,dan
+2026-01-23T12:00:00Z,1001,Alice One,alice@mail.example,alice
+2026-01-25T09:00:00Z,1001,Alicia One,alice@mail.example,alice
+2026-01-23T12:00:00Z,1002,Bob Two,bob@example.com,bob
+2026-01-24T18:00:00Z,1003,Cara Three,cara@Inbox.Example,cara
+2026-01-26T00:00:00Z,1005,Eve Five,eve@example.com,eve
+2026-01-25T12:00:00Z,1001,Alicia One,alice@mail.example,alice_new
+2026-01-22T08:00:00Z,1001,Alice One,alice@example.com,alice
+2026-01-23T10:00:00Z,1001,Alice One,alice@example.com,alice
+2026-01-24T00:00:00Z,1002,Bob Two,bob@mail.example,bob
+2026-01-26T00:00:00Z,1001,Alicia Future,alice@future.example,alice_future

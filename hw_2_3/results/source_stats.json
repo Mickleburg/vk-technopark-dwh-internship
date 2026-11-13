@@ -1,0 +1,7 @@
+{
+  "events": 6000,
+  "users": 100,
+  "campaigns": 25,
+  "min_event_time": "2026-01-01 00:10:55",
+  "max_event_time": "2026-02-01 08:29:58"
+}

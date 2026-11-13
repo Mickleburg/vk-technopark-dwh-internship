@@ -1,0 +1,16 @@
+{
+  "task_instances": [
+    {
+      "dag_id": "hw23_user_campaigns",
+      "dag_run_id": "scheduled__2026-01-23T00:00:00+00:00",
+      "execution_date": "2026-01-23T00:00:00+00:00",
+      "task_id": "build_campaign_recipients"
+    },
+    {
+      "dag_id": "hw23_user_campaigns",
+      "dag_run_id": "scheduled__2026-01-23T00:00:00+00:00",
+      "execution_date": "2026-01-23T00:00:00+00:00",
+      "task_id": "build_user_scd2"
+    }
+  ]
+}

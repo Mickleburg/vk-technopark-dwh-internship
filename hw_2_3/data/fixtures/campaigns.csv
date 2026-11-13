@@ -1,0 +1,17 @@
+campaign_id,email_domain,send_at,campaign_name
+101,example.com,2026-01-23T09:00:00Z,Before_email_change
+102,example.com,2026-01-23T12:00:00Z,Old_domain_at_boundary
+103,mail.example,2026-01-23T12:00:00Z,New_domain_at_boundary
+104,mail.example,2026-01-23T11:59:59Z,New_domain_too_early
+105,mail.example,2026-01-24T00:00:00Z,Midnight_change
+106,inbox.example,2026-01-24T18:00:00Z,First_profile_event
+107,inbox.example,2026-01-24T17:59:59Z,Before_profile_exists
+108,post.example,2026-01-25T00:00:00Z,Next_midnight_change
+109,mail.example,2026-01-25T09:00:00Z,Repeated_profile_event
+110,example.com,2026-01-25T23:59:59Z,Last_second_of_day
+111,example.com,2026-01-26T00:00:00Z,Outside_three_day_window
+112,example.com,2026-01-22T09:00:00Z,Before_three_day_window
+113,absent.example,2026-01-25T12:00:00Z,No_matching_domain
+114,absent.example,2026-01-27T12:00:00Z,Empty_result_day
+115,MAIL.EXAMPLE,2026-01-25T13:00:00Z,Changed_login_uppercase_domain
+116,mail.example,2026-01-25T19:00:00Z,Returned_profile_state

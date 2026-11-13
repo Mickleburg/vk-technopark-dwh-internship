@@ -1,0 +1,141 @@
+{
+  "dates": {
+    "2026-01-23": {
+      "user_scd2": {
+        "rows": 961,
+        "metadata": [
+          {
+            "_dag_id": "hw23_user_campaigns",
+            "_run_id": "scheduled__2026-01-23T00:00:00+00:00",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-23 00:00:00",
+            "_data_interval_end": "2026-01-24 00:00:00",
+            "rows": 961,
+            "min_loaded_at": "2026-11-13 09:36:13.977472",
+            "max_loaded_at": "2026-11-13 09:36:13.977472"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 100
+      },
+      "campaign_recipients": {
+        "rows": 53,
+        "metadata": [
+          {
+            "_dag_id": "hw23_user_campaigns",
+            "_run_id": "scheduled__2026-01-23T00:00:00+00:00",
+            "_task_id": "build_campaign_recipients",
+            "_data_interval_start": "2026-01-23 00:00:00",
+            "_data_interval_end": "2026-01-24 00:00:00",
+            "rows": 53,
+            "min_loaded_at": "2026-11-13 09:36:33.675582",
+            "max_loaded_at": "2026-11-13 09:36:33.675582"
+          }
+        ],
+        "matches_oracle": true,
+        "campaigns": [
+          {
+            "campaign_id": 11,
+            "recipients": 10
+          },
+          {
+            "campaign_id": 16,
+            "recipients": 23
+          },
+          {
+            "campaign_id": 23,
+            "recipients": 20
+          }
+        ]
+      }
+    },
+    "2026-01-24": {
+      "user_scd2": {
+        "rows": 995,
+        "metadata": [
+          {
+            "_dag_id": "hw23_user_campaigns",
+            "_run_id": "scheduled__2026-01-24T00:00:00+00:00",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-24 00:00:00",
+            "_data_interval_end": "2026-01-25 00:00:00",
+            "rows": 995,
+            "min_loaded_at": "2026-11-13 09:34:48.976324",
+            "max_loaded_at": "2026-11-13 09:34:48.976324"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 100
+      },
+      "campaign_recipients": {
+        "rows": 25,
+        "metadata": [
+          {
+            "_dag_id": "hw23_user_campaigns",
+            "_run_id": "scheduled__2026-01-24T00:00:00+00:00",
+            "_task_id": "build_campaign_recipients",
+            "_data_interval_start": "2026-01-24 00:00:00",
+            "_data_interval_end": "2026-01-25 00:00:00",
+            "rows": 25,
+            "min_loaded_at": "2026-11-13 09:35:11.332283",
+            "max_loaded_at": "2026-11-13 09:35:11.332283"
+          }
+        ],
+        "matches_oracle": true,
+        "campaigns": [
+          {
+            "campaign_id": 21,
+            "recipients": 25
+          }
+        ]
+      }
+    },
+    "2026-01-25": {
+      "user_scd2": {
+        "rows": 1036,
+        "metadata": [
+          {
+            "_dag_id": "hw23_user_campaigns",
+            "_run_id": "scheduled__2026-01-25T00:00:00+00:00",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-25 00:00:00",
+            "_data_interval_end": "2026-01-26 00:00:00",
+            "rows": 1036,
+            "min_loaded_at": "2026-11-13 09:35:32.308553",
+            "max_loaded_at": "2026-11-13 09:35:32.308553"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 100
+      },
+      "campaign_recipients": {
+        "rows": 22,
+        "metadata": [
+          {
+            "_dag_id": "hw23_user_campaigns",
+            "_run_id": "scheduled__2026-01-25T00:00:00+00:00",
+            "_task_id": "build_campaign_recipients",
+            "_data_interval_start": "2026-01-25 00:00:00",
+            "_data_interval_end": "2026-01-26 00:00:00",
+            "rows": 22,
+            "min_loaded_at": "2026-11-13 09:35:52.406307",
+            "max_loaded_at": "2026-11-13 09:35:52.406307"
+          }
+        ],
+        "matches_oracle": true,
+        "campaigns": [
+          {
+            "campaign_id": 19,
+            "recipients": 22
+          }
+        ]
+      }
+    }
+  },
+  "first_date_business_equal": true,
+  "other_dates_all_fields_equal": true,
+  "same_run_id": true,
+  "both_tasks_reexecuted": true,
+  "loaded_at_changed": true,
+  "except_all_both_directions": true
+}

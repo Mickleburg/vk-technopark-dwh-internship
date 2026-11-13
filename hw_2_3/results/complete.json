@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "scheduled_runs": 3,
+  "tasks_per_run": 2,
+  "first_run_repeated": true,
+  "source_unchanged": true,
+  "independent_oracle_equal": true
+}

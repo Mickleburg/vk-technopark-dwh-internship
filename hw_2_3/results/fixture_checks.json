@@ -1,0 +1,464 @@
+{
+  "dates": {
+    "2026-01-21": {
+      "user_scd2": {
+        "rows": 0,
+        "metadata": [],
+        "matches_oracle": true,
+        "users": 0
+      },
+      "campaign_recipients": {
+        "rows": 0,
+        "metadata": [],
+        "matches_oracle": true,
+        "campaigns": []
+      }
+    },
+    "2026-01-23": {
+      "user_scd2": {
+        "rows": 3,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-23",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-23 00:00:00",
+            "_data_interval_end": "2026-01-24 00:00:00",
+            "rows": 3,
+            "min_loaded_at": "2026-11-13 09:37:23.207945",
+            "max_loaded_at": "2026-11-13 09:37:23.207945"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 2
+      },
+      "campaign_recipients": {
+        "rows": 3,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-23",
+            "_task_id": "build_campaign_recipients",
+            "_data_interval_start": "2026-01-23 00:00:00",
+            "_data_interval_end": "2026-01-24 00:00:00",
+            "rows": 3,
+            "min_loaded_at": "2026-11-13 09:37:26.458725",
+            "max_loaded_at": "2026-11-13 09:37:26.458725"
+          }
+        ],
+        "matches_oracle": true,
+        "campaigns": [
+          {
+            "campaign_id": 101,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 102,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 103,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 104,
+            "recipients": 0
+          }
+        ]
+      }
+    },
+    "2026-01-24": {
+      "user_scd2": {
+        "rows": 6,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-24",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-24 00:00:00",
+            "_data_interval_end": "2026-01-25 00:00:00",
+            "rows": 6,
+            "min_loaded_at": "2026-11-13 09:37:31.783054",
+            "max_loaded_at": "2026-11-13 09:37:31.783054"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 3
+      },
+      "campaign_recipients": {
+        "rows": 3,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-24",
+            "_task_id": "build_campaign_recipients",
+            "_data_interval_start": "2026-01-24 00:00:00",
+            "_data_interval_end": "2026-01-25 00:00:00",
+            "rows": 3,
+            "min_loaded_at": "2026-11-13 09:37:34.930077",
+            "max_loaded_at": "2026-11-13 09:37:34.930077"
+          }
+        ],
+        "matches_oracle": true,
+        "campaigns": [
+          {
+            "campaign_id": 105,
+            "recipients": 2
+          },
+          {
+            "campaign_id": 106,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 107,
+            "recipients": 0
+          }
+        ]
+      }
+    },
+    "2026-01-25": {
+      "user_scd2": {
+        "rows": 10,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-25",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-25 00:00:00",
+            "_data_interval_end": "2026-01-26 00:00:00",
+            "rows": 10,
+            "min_loaded_at": "2026-11-13 09:37:39.725747",
+            "max_loaded_at": "2026-11-13 09:37:39.725747"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 4
+      },
+      "campaign_recipients": {
+        "rows": 5,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-25",
+            "_task_id": "build_campaign_recipients",
+            "_data_interval_start": "2026-01-25 00:00:00",
+            "_data_interval_end": "2026-01-26 00:00:00",
+            "rows": 5,
+            "min_loaded_at": "2026-11-13 09:37:42.925353",
+            "max_loaded_at": "2026-11-13 09:37:42.925353"
+          }
+        ],
+        "matches_oracle": true,
+        "campaigns": [
+          {
+            "campaign_id": 108,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 109,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 110,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 113,
+            "recipients": 0
+          },
+          {
+            "campaign_id": 115,
+            "recipients": 1
+          },
+          {
+            "campaign_id": 116,
+            "recipients": 1
+          }
+        ]
+      }
+    },
+    "2026-01-27": {
+      "user_scd2": {
+        "rows": 12,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-27",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-27 00:00:00",
+            "_data_interval_end": "2026-01-28 00:00:00",
+            "rows": 12,
+            "min_loaded_at": "2026-11-13 09:37:47.599838",
+            "max_loaded_at": "2026-11-13 09:37:47.599838"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 5
+      },
+      "campaign_recipients": {
+        "rows": 0,
+        "metadata": [],
+        "matches_oracle": true,
+        "campaigns": [
+          {
+            "campaign_id": 114,
+            "recipients": 0
+          }
+        ]
+      }
+    },
+    "2026-01-28": {
+      "user_scd2": {
+        "rows": 12,
+        "metadata": [
+          {
+            "_dag_id": "fixture_checks",
+            "_run_id": "fixture_2026-01-28",
+            "_task_id": "build_user_scd2",
+            "_data_interval_start": "2026-01-28 00:00:00",
+            "_data_interval_end": "2026-01-29 00:00:00",
+            "rows": 12,
+            "min_loaded_at": "2026-11-13 09:37:54.708144",
+            "max_loaded_at": "2026-11-13 09:37:54.708144"
+          }
+        ],
+        "matches_oracle": true,
+        "users": 5
+      },
+      "campaign_recipients": {
+        "rows": 0,
+        "metadata": [],
+        "matches_oracle": true,
+        "campaigns": []
+      }
+    }
+  },
+  "boundary_and_domain_cases": true,
+  "before_first_profile_excluded": true,
+  "unchanged_events_do_not_add_versions": true,
+  "profile_return_preserved": true,
+  "future_events_excluded": true,
+  "original_case_preserved": true,
+  "empty_parquet_readable": true,
+  "empty_overwrite_removes_old_rows": true,
+  "examples": {
+    "2026-01-21": [],
+    "2026-01-23": [
+      {
+        "campaign_id": 101,
+        "campaign_name": "Before_email_change",
+        "send_at": "2026-01-23 09:00:00",
+        "email_domain": "example.com",
+        "user_id": 1001,
+        "user_fio": "Alice One",
+        "user_email": "alice@example.com",
+        "user_login": "alice",
+        "user_valid_from": "2026-01-22 08:00:00",
+        "user_valid_to": "2026-01-23 12:00:00",
+        "calculation_date": "2026-01-23",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-23",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-23 00:00:00",
+        "_data_interval_end": "2026-01-24 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:26.458725"
+      },
+      {
+        "campaign_id": 103,
+        "campaign_name": "New_domain_at_boundary",
+        "send_at": "2026-01-23 12:00:00",
+        "email_domain": "mail.example",
+        "user_id": 1001,
+        "user_fio": "Alice One",
+        "user_email": "alice@mail.example",
+        "user_login": "alice",
+        "user_valid_from": "2026-01-23 12:00:00",
+        "user_valid_to": null,
+        "calculation_date": "2026-01-23",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-23",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-23 00:00:00",
+        "_data_interval_end": "2026-01-24 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:26.458725"
+      },
+      {
+        "campaign_id": 102,
+        "campaign_name": "Old_domain_at_boundary",
+        "send_at": "2026-01-23 12:00:00",
+        "email_domain": "example.com",
+        "user_id": 1002,
+        "user_fio": "Bob Two",
+        "user_email": "bob@example.com",
+        "user_login": "bob",
+        "user_valid_from": "2026-01-23 12:00:00",
+        "user_valid_to": null,
+        "calculation_date": "2026-01-23",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-23",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-23 00:00:00",
+        "_data_interval_end": "2026-01-24 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:26.458725"
+      }
+    ],
+    "2026-01-24": [
+      {
+        "campaign_id": 105,
+        "campaign_name": "Midnight_change",
+        "send_at": "2026-01-24 00:00:00",
+        "email_domain": "mail.example",
+        "user_id": 1001,
+        "user_fio": "Alice One",
+        "user_email": "alice@mail.example",
+        "user_login": "alice",
+        "user_valid_from": "2026-01-23 12:00:00",
+        "user_valid_to": "2026-01-24 09:00:00",
+        "calculation_date": "2026-01-24",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-24",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-24 00:00:00",
+        "_data_interval_end": "2026-01-25 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:34.930077"
+      },
+      {
+        "campaign_id": 105,
+        "campaign_name": "Midnight_change",
+        "send_at": "2026-01-24 00:00:00",
+        "email_domain": "mail.example",
+        "user_id": 1002,
+        "user_fio": "Bob Two",
+        "user_email": "bob@mail.example",
+        "user_login": "bob",
+        "user_valid_from": "2026-01-24 00:00:00",
+        "user_valid_to": null,
+        "calculation_date": "2026-01-24",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-24",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-24 00:00:00",
+        "_data_interval_end": "2026-01-25 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:34.930077"
+      },
+      {
+        "campaign_id": 106,
+        "campaign_name": "First_profile_event",
+        "send_at": "2026-01-24 18:00:00",
+        "email_domain": "inbox.example",
+        "user_id": 1003,
+        "user_fio": "Cara Three",
+        "user_email": "cara@Inbox.Example",
+        "user_login": "cara",
+        "user_valid_from": "2026-01-24 18:00:00",
+        "user_valid_to": null,
+        "calculation_date": "2026-01-24",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-24",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-24 00:00:00",
+        "_data_interval_end": "2026-01-25 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:34.930077"
+      }
+    ],
+    "2026-01-25": [
+      {
+        "campaign_id": 109,
+        "campaign_name": "Repeated_profile_event",
+        "send_at": "2026-01-25 09:00:00",
+        "email_domain": "mail.example",
+        "user_id": 1001,
+        "user_fio": "Alicia One",
+        "user_email": "alice@mail.example",
+        "user_login": "alice",
+        "user_valid_from": "2026-01-24 09:00:00",
+        "user_valid_to": "2026-01-25 12:00:00",
+        "calculation_date": "2026-01-25",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-25",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-25 00:00:00",
+        "_data_interval_end": "2026-01-26 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:42.925353"
+      },
+      {
+        "campaign_id": 115,
+        "campaign_name": "Changed_login_uppercase_domain",
+        "send_at": "2026-01-25 13:00:00",
+        "email_domain": "MAIL.EXAMPLE",
+        "user_id": 1001,
+        "user_fio": "Alicia One",
+        "user_email": "alice@mail.example",
+        "user_login": "alice_new",
+        "user_valid_from": "2026-01-25 12:00:00",
+        "user_valid_to": "2026-01-25 18:00:00",
+        "calculation_date": "2026-01-25",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-25",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-25 00:00:00",
+        "_data_interval_end": "2026-01-26 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:42.925353"
+      },
+      {
+        "campaign_id": 116,
+        "campaign_name": "Returned_profile_state",
+        "send_at": "2026-01-25 19:00:00",
+        "email_domain": "mail.example",
+        "user_id": 1001,
+        "user_fio": "Alicia One",
+        "user_email": "alice@mail.example",
+        "user_login": "alice",
+        "user_valid_from": "2026-01-25 18:00:00",
+        "user_valid_to": null,
+        "calculation_date": "2026-01-25",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-25",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-25 00:00:00",
+        "_data_interval_end": "2026-01-26 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:42.925353"
+      },
+      {
+        "campaign_id": 110,
+        "campaign_name": "Last_second_of_day",
+        "send_at": "2026-01-25 23:59:59",
+        "email_domain": "example.com",
+        "user_id": 1004,
+        "user_fio": "Dan Four",
+        "user_email": "dan@example.com",
+        "user_login": "dan",
+        "user_valid_from": "2026-01-25 23:59:59",
+        "user_valid_to": null,
+        "calculation_date": "2026-01-25",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-25",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-25 00:00:00",
+        "_data_interval_end": "2026-01-26 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:42.925353"
+      },
+      {
+        "campaign_id": 108,
+        "campaign_name": "Next_midnight_change",
+        "send_at": "2026-01-25 00:00:00",
+        "email_domain": "post.example",
+        "user_id": 1002,
+        "user_fio": "Bob Two",
+        "user_email": "bob@post.example",
+        "user_login": "bob",
+        "user_valid_from": "2026-01-25 00:00:00",
+        "user_valid_to": null,
+        "calculation_date": "2026-01-25",
+        "_dag_id": "fixture_checks",
+        "_run_id": "fixture_2026-01-25",
+        "_task_id": "build_campaign_recipients",
+        "_data_interval_start": "2026-01-25 00:00:00",
+        "_data_interval_end": "2026-01-26 00:00:00",
+        "_loaded_at": "2026-11-13 09:37:42.925353"
+      }
+    ],
+    "2026-01-27": [],
+    "2026-01-28": []
+  }
+}

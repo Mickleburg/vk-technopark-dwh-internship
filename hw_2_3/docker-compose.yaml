@@ -1,0 +1,173 @@
+name: baumanka-hw23
+
+x-airflow-common: &airflow-common
+  build:
+    context: .
+    dockerfile: docker/Dockerfile
+  image: baumanka-hw23-airflow:2.10.5-spark3.5.4
+  user: "50000:0"
+  environment: &airflow-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: utc
+    AIRFLOW__CORE__PARALLELISM: "2"
+    AIRFLOW__WEBSERVER__WORKERS: "2"
+    AIRFLOW__API__AUTH_BACKENDS: airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session
+    CHECK_AIRFLOW_USER: ${AIRFLOW_USER:-student}
+    CHECK_AIRFLOW_PASSWORD: ${AIRFLOW_PASSWORD:-student}
+    AIRFLOW__WEBSERVER__SECRET_KEY: local-hw23-webserver-secret
+    AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    PYTHONPATH: /opt/airflow:/opt/airflow/jobs:/opt/airflow/scripts
+    PYSPARK_PYTHON: /usr/local/bin/python
+    TZ: UTC
+    SPARK_LOCAL_IP: 127.0.0.1
+    SPARK_MASTER: local[2]
+    S3_ENDPOINT: http://rustfs:9000
+    S3_BUCKET: hw23
+    AWS_ACCESS_KEY_ID: ${S3_ACCESS_KEY:-hw23student}
+    AWS_SECRET_ACCESS_KEY: ${S3_SECRET_KEY:-hw23student-secret}
+    AWS_DEFAULT_REGION: us-east-1
+    AWS_EC2_METADATA_DISABLED: "true"
+    AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+    AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+  volumes:
+    - ./dags:/opt/airflow/dags:ro
+    - ./jobs:/opt/airflow/jobs:ro
+    - ./scripts:/opt/airflow/scripts:ro
+    - ./data:/opt/airflow/data:ro
+    - ./results:/opt/airflow/results
+    - airflow-logs:/opt/airflow/logs
+
+services:
+  postgres:
+    image: postgres:16.6-bookworm
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U airflow -d airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  volume-init:
+    image: alpine:3.21
+    user: "0:0"
+    volumes:
+      - rustfs-data:/data
+      - rustfs-logs:/logs
+      - airflow-logs:/airflow-logs
+    command: [sh, -ec, "chown -R 10001:10001 /data /logs; chown -R 50000:0 /airflow-logs"]
+    restart: "no"
+
+  rustfs:
+    image: rustfs/rustfs@sha256:ed9210d6411d77ffceb70d94b964a3cb7d225983368bc25bebe01e995293dcc2
+    user: "10001:10001"
+    depends_on:
+      volume-init:
+        condition: service_completed_successfully
+    environment:
+      RUSTFS_VOLUMES: /data
+      RUSTFS_ADDRESS: 0.0.0.0:9000
+      RUSTFS_CONSOLE_ADDRESS: 0.0.0.0:9001
+      RUSTFS_CONSOLE_ENABLE: "true"
+      RUSTFS_ACCESS_KEY: ${S3_ACCESS_KEY:-hw23student}
+      RUSTFS_SECRET_KEY: ${S3_SECRET_KEY:-hw23student-secret}
+      RUSTFS_OBS_LOG_DIRECTORY: /logs
+    ports:
+      - "127.0.0.1:${S3_PORT:-9400}:9000"
+      - "127.0.0.1:${S3_CONSOLE_PORT:-9401}:9001"
+    volumes:
+      - rustfs-data:/data
+      - rustfs-logs:/logs
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:9000/health]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  airflow-init:
+    <<: *airflow-common
+    depends_on:
+      postgres:
+        condition: service_healthy
+      volume-init:
+        condition: service_completed_successfully
+    environment:
+      <<: *airflow-env
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: ${AIRFLOW_USER:-student}
+      _AIRFLOW_WWW_USER_PASSWORD: ${AIRFLOW_PASSWORD:-student}
+      _AIRFLOW_WWW_USER_FIRSTNAME: Student
+      _AIRFLOW_WWW_USER_LASTNAME: HW23
+      _AIRFLOW_WWW_USER_ROLE: Admin
+      _AIRFLOW_WWW_USER_EMAIL: student@example.com
+    command: version
+    restart: "no"
+
+  s3-init:
+    <<: *airflow-common
+    environment:
+      <<: *airflow-env
+      CONNECTION_CHECK_MAX_COUNT: "0"
+    depends_on:
+      rustfs:
+        condition: service_healthy
+    command: [python, /opt/airflow/scripts/upload_data.py]
+    restart: "no"
+
+  airflow-webserver:
+    <<: *airflow-common
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+      s3-init:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:${AIRFLOW_PORT:-8084}:8080"
+    command: webserver
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:8080/health]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 30s
+
+  airflow-scheduler:
+    <<: *airflow-common
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+      s3-init:
+        condition: service_completed_successfully
+    command: scheduler
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:8974/health]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 30s
+
+  tools:
+    <<: *airflow-common
+    profiles: [tools]
+    environment:
+      <<: *airflow-env
+      CONNECTION_CHECK_MAX_COUNT: "0"
+    depends_on:
+      s3-init:
+        condition: service_completed_successfully
+    command: [python, /opt/airflow/scripts/check_environment.py]
+
+volumes:
+  postgres-data:
+  rustfs-data:
+  rustfs-logs:
+  airflow-logs:

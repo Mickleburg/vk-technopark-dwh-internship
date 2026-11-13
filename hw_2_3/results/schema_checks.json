@@ -1,0 +1,116 @@
+{
+  "all_types_match_assignment": true,
+  "schemas": {
+    "2026-01-23": {
+      "build_user_scd2": {
+        "user_id": "long",
+        "user_fio": "string",
+        "user_email": "string",
+        "user_login": "string",
+        "valid_from": "timestamp",
+        "valid_to": "timestamp",
+        "is_current": "boolean",
+        "snapshot_date": "date",
+        "_dag_id": "string",
+        "_run_id": "string",
+        "_task_id": "string",
+        "_data_interval_start": "timestamp",
+        "_data_interval_end": "timestamp",
+        "_loaded_at": "timestamp"
+      },
+      "build_campaign_recipients": {
+        "campaign_id": "long",
+        "campaign_name": "string",
+        "send_at": "timestamp",
+        "email_domain": "string",
+        "user_id": "long",
+        "user_fio": "string",
+        "user_email": "string",
+        "user_login": "string",
+        "user_valid_from": "timestamp",
+        "user_valid_to": "timestamp",
+        "calculation_date": "date",
+        "_dag_id": "string",
+        "_run_id": "string",
+        "_task_id": "string",
+        "_data_interval_start": "timestamp",
+        "_data_interval_end": "timestamp",
+        "_loaded_at": "timestamp"
+      }
+    },
+    "2026-01-24": {
+      "build_user_scd2": {
+        "user_id": "long",
+        "user_fio": "string",
+        "user_email": "string",
+        "user_login": "string",
+        "valid_from": "timestamp",
+        "valid_to": "timestamp",
+        "is_current": "boolean",
+        "snapshot_date": "date",
+        "_dag_id": "string",
+        "_run_id": "string",
+        "_task_id": "string",
+        "_data_interval_start": "timestamp",
+        "_data_interval_end": "timestamp",
+        "_loaded_at": "timestamp"
+      },
+      "build_campaign_recipients": {
+        "campaign_id": "long",
+        "campaign_name": "string",
+        "send_at": "timestamp",
+        "email_domain": "string",
+        "user_id": "long",
+        "user_fio": "string",
+        "user_email": "string",
+        "user_login": "string",
+        "user_valid_from": "timestamp",
+        "user_valid_to": "timestamp",
+        "calculation_date": "date",
+        "_dag_id": "string",
+        "_run_id": "string",
+        "_task_id": "string",
+        "_data_interval_start": "timestamp",
+        "_data_interval_end": "timestamp",
+        "_loaded_at": "timestamp"
+      }
+    },
+    "2026-01-25": {
+      "build_user_scd2": {
+        "user_id": "long",
+        "user_fio": "string",
+        "user_email": "string",
+        "user_login": "string",
+        "valid_from": "timestamp",
+        "valid_to": "timestamp",
+        "is_current": "boolean",
+        "snapshot_date": "date",
+        "_dag_id": "string",
+        "_run_id": "string",
+        "_task_id": "string",
+        "_data_interval_start": "timestamp",
+        "_data_interval_end": "timestamp",
+        "_loaded_at": "timestamp"
+      },
+      "build_campaign_recipients": {
+        "campaign_id": "long",
+        "campaign_name": "string",
+        "send_at": "timestamp",
+        "email_domain": "string",
+        "user_id": "long",
+        "user_fio": "string",
+        "user_email": "string",
+        "user_login": "string",
+        "user_valid_from": "timestamp",
+        "user_valid_to": "timestamp",
+        "calculation_date": "date",
+        "_dag_id": "string",
+        "_run_id": "string",
+        "_task_id": "string",
+        "_data_interval_start": "timestamp",
+        "_data_interval_end": "timestamp",
+        "_loaded_at": "timestamp"
+      }
+    }
+  }
+}
