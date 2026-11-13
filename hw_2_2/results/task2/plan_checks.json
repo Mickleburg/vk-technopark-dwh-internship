@@ -1,0 +1,83 @@
+[
+  {
+    "plan": "baseline_0.txt",
+    "variant": "baseline",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "broadcast_0.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "salt_0.txt",
+    "variant": "salt",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "broadcast_1.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "salt_1.txt",
+    "variant": "salt",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "baseline_1.txt",
+    "variant": "baseline",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "salt_2.txt",
+    "variant": "salt",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "baseline_2.txt",
+    "variant": "baseline",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "broadcast_2.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  }
+]

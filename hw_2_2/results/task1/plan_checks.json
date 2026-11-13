@@ -1,0 +1,182 @@
+[
+  {
+    "plan": "auto_0.txt",
+    "variant": "auto",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": true,
+    "final_aqe_confirmed": true
+  },
+  {
+    "plan": "merge_0.txt",
+    "variant": "merge",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "broadcast_0.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "shuffle_hash_0.txt",
+    "variant": "shuffle_hash",
+    "operators": [
+      "ShuffledHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "merge_1.txt",
+    "variant": "merge",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "broadcast_1.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "shuffle_hash_1.txt",
+    "variant": "shuffle_hash",
+    "operators": [
+      "ShuffledHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "auto_1.txt",
+    "variant": "auto",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": true,
+    "final_aqe_confirmed": true
+  },
+  {
+    "plan": "broadcast_2.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "shuffle_hash_2.txt",
+    "variant": "shuffle_hash",
+    "operators": [
+      "ShuffledHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "auto_2.txt",
+    "variant": "auto",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": true,
+    "final_aqe_confirmed": true
+  },
+  {
+    "plan": "merge_2.txt",
+    "variant": "merge",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "shuffle_hash_3.txt",
+    "variant": "shuffle_hash",
+    "operators": [
+      "ShuffledHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "auto_3.txt",
+    "variant": "auto",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": true,
+    "final_aqe_confirmed": true
+  },
+  {
+    "plan": "merge_3.txt",
+    "variant": "merge",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "broadcast_3.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "auto_4.txt",
+    "variant": "auto",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": true,
+    "final_aqe_confirmed": true
+  },
+  {
+    "plan": "merge_4.txt",
+    "variant": "merge",
+    "operators": [
+      "SortMergeJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "broadcast_4.txt",
+    "variant": "broadcast",
+    "operators": [
+      "BroadcastHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  },
+  {
+    "plan": "shuffle_hash_4.txt",
+    "variant": "shuffle_hash",
+    "operators": [
+      "ShuffledHashJoin"
+    ],
+    "aqe": false,
+    "final_aqe_confirmed": false
+  }
+]

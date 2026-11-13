@@ -1,0 +1,58 @@
+[
+  {
+    "variant": "auto",
+    "runs": 5,
+    "seconds_median": 2.0782304480089806,
+    "seconds_min": 1.9308928909886163,
+    "seconds_max": 2.2201902639935724,
+    "files": 4,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "task_duration_ms_median": 1226,
+    "task_duration_ms_max": 1296
+  },
+  {
+    "variant": "broadcast",
+    "runs": 5,
+    "seconds_median": 2.024276275013108,
+    "seconds_min": 1.8307562849950045,
+    "seconds_max": 2.147998386004474,
+    "files": 4,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "task_duration_ms_median": 1168,
+    "task_duration_ms_max": 1179
+  },
+  {
+    "variant": "merge",
+    "runs": 5,
+    "seconds_median": 2.807103264000034,
+    "seconds_min": 2.633949773007771,
+    "seconds_max": 3.294970507005928,
+    "files": 5,
+    "shuffle_read_bytes": 50673833,
+    "shuffle_write_bytes": 50673833,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "task_duration_ms_median": 43,
+    "task_duration_ms_max": 784
+  },
+  {
+    "variant": "shuffle_hash",
+    "runs": 5,
+    "seconds_median": 2.7453112560033333,
+    "seconds_min": 2.5760778729745653,
+    "seconds_max": 4.114016948995413,
+    "files": 5,
+    "shuffle_read_bytes": 50673833,
+    "shuffle_write_bytes": 50673833,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "task_duration_ms_median": 36,
+    "task_duration_ms_max": 781
+  }
+]

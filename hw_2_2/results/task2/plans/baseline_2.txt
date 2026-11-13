@@ -1,0 +1,160 @@
+Execution 20
+INITIAL
+== Physical Plan ==
+Execute InsertIntoHadoopFsRelationCommand (14)
++- WriteFiles (13)
+   +- * Project (12)
+      +- * SortMergeJoin Inner (11)
+         :- * Sort (5)
+         :  +- Exchange (4)
+         :     +- * Filter (3)
+         :        +- * ColumnarToRow (2)
+         :           +- Scan parquet  (1)
+         +- * Sort (10)
+            +- Exchange (9)
+               +- * Filter (8)
+                  +- * ColumnarToRow (7)
+                     +- Scan parquet  (6)
+
+
+(1) Scan parquet 
+Output [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/views]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<user_uid:bigint,element_uid:bigint,watched_time:bigint>
+
+(2) ColumnarToRow [codegen id : 1]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+
+(3) Filter [codegen id : 1]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Condition : isnotnull(element_uid#1L)
+
+(4) Exchange
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Arguments: hashpartitioning(element_uid#1L, 16), ENSURE_REQUIREMENTS, [plan_id=1518]
+
+(5) Sort [codegen id : 2]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Arguments: [element_uid#1L ASC NULLS FIRST], false, 0
+
+(6) Scan parquet 
+Output [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/catalogue]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<attributes:array<bigint>,availability:array<string>,duration:bigint,element_uid:bigint,feature_1:double,feature_2:double,feature_3:bigint,feature_4:double,feature_5:double,type:string>
+
+(7) ColumnarToRow [codegen id : 3]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(8) Filter [codegen id : 3]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Condition : isnotnull(element_uid#9L)
+
+(9) Exchange
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Arguments: hashpartitioning(element_uid#9L, 16), ENSURE_REQUIREMENTS, [plan_id=1527]
+
+(10) Sort [codegen id : 4]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Arguments: [element_uid#9L ASC NULLS FIRST], false, 0
+
+(11) SortMergeJoin [codegen id : 5]
+Left keys [1]: [element_uid#1L]
+Right keys [1]: [element_uid#9L]
+Join type: Inner
+Join condition: None
+
+(12) Project [codegen id : 5]
+Output [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Input [13]: [user_uid#0L, element_uid#1L, watched_time#2L, attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(13) WriteFiles
+Input [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(14) Execute InsertIntoHadoopFsRelationCommand
+Input: []
+Arguments: s3a://hw-2-2/results/task2/baseline, false, Parquet, [path=s3a://hw-2-2/results/task2/baseline], Overwrite, [element_uid, user_uid, watched_time, attributes, availability, duration, feature_1, feature_2, feature_3, feature_4, feature_5, type]
+
+
+FINAL
+== Physical Plan ==
+Execute InsertIntoHadoopFsRelationCommand (14)
++- WriteFiles (13)
+   +- * Project (12)
+      +- * SortMergeJoin Inner (11)
+         :- * Sort (5)
+         :  +- Exchange (4)
+         :     +- * Filter (3)
+         :        +- * ColumnarToRow (2)
+         :           +- Scan parquet  (1)
+         +- * Sort (10)
+            +- Exchange (9)
+               +- * Filter (8)
+                  +- * ColumnarToRow (7)
+                     +- Scan parquet  (6)
+
+
+(1) Scan parquet 
+Output [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/views]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<user_uid:bigint,element_uid:bigint,watched_time:bigint>
+
+(2) ColumnarToRow [codegen id : 1]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+
+(3) Filter [codegen id : 1]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Condition : isnotnull(element_uid#1L)
+
+(4) Exchange
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Arguments: hashpartitioning(element_uid#1L, 16), ENSURE_REQUIREMENTS, [plan_id=1518]
+
+(5) Sort [codegen id : 2]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Arguments: [element_uid#1L ASC NULLS FIRST], false, 0
+
+(6) Scan parquet 
+Output [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/catalogue]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<attributes:array<bigint>,availability:array<string>,duration:bigint,element_uid:bigint,feature_1:double,feature_2:double,feature_3:bigint,feature_4:double,feature_5:double,type:string>
+
+(7) ColumnarToRow [codegen id : 3]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(8) Filter [codegen id : 3]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Condition : isnotnull(element_uid#9L)
+
+(9) Exchange
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Arguments: hashpartitioning(element_uid#9L, 16), ENSURE_REQUIREMENTS, [plan_id=1527]
+
+(10) Sort [codegen id : 4]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Arguments: [element_uid#9L ASC NULLS FIRST], false, 0
+
+(11) SortMergeJoin [codegen id : 5]
+Left keys [1]: [element_uid#1L]
+Right keys [1]: [element_uid#9L]
+Join type: Inner
+Join condition: None
+
+(12) Project [codegen id : 5]
+Output [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Input [13]: [user_uid#0L, element_uid#1L, watched_time#2L, attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(13) WriteFiles
+Input [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(14) Execute InsertIntoHadoopFsRelationCommand
+Input: []
+Arguments: s3a://hw-2-2/results/task2/baseline, false, Parquet, [path=s3a://hw-2-2/results/task2/baseline], Overwrite, [element_uid, user_uid, watched_time, attributes, availability, duration, feature_1, feature_2, feature_3, feature_4, feature_5, type]
+

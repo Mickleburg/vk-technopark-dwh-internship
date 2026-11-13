@@ -1,0 +1,47 @@
+name: dwh-hw-2-2
+services:
+  rustfs:
+    image: rustfs/rustfs@sha256:ed9210d6411d77ffceb70d94b964a3cb7d225983368bc25bebe01e995293dcc2
+    command: ["/data"]
+    environment:
+      RUSTFS_ACCESS_KEY: homework
+      RUSTFS_SECRET_KEY: homework-scd2-local
+      RUSTFS_CONSOLE_ENABLE: "true"
+    ports:
+      - "127.0.0.1:9200:9000"
+      - "127.0.0.1:9201:9001"
+    volumes:
+      - s3-data:/data
+  jupyter:
+    build: ../hw_2_1
+    environment:
+      S3_ENDPOINT: http://rustfs:9000
+      AWS_ACCESS_KEY_ID: homework
+      AWS_SECRET_ACCESS_KEY: homework-scd2-local
+      AWS_DEFAULT_REGION: us-east-1
+      PYSPARK_PYTHON: python
+      PYSPARK_SUBMIT_ARGS: --driver-memory 2g pyspark-shell
+      SPARK_LOCAL_IP: 127.0.0.1
+    ports:
+      - "127.0.0.1:8892:8888"
+      - "127.0.0.1:4042:4040"
+    volumes:
+      - .:/work
+      - ../hw_2_1:/scd2project:ro
+    working_dir: /work
+    depends_on:
+      - rustfs
+    command: ["jupyter", "lab", "--ip=0.0.0.0", "--no-browser", "--allow-root", "--ServerApp.root_dir=/work", "--IdentityProvider.token=homework"]
+  history:
+    image: dwh-hw-2-2-jupyter
+    profiles: [history]
+    environment:
+      SPARK_HISTORY_OPTS: -Dspark.history.fs.logDirectory=file:/work/results/events -Dspark.history.ui.port=18080
+      SPARK_DAEMON_MEMORY: 512m
+    volumes:
+      - ./results/events:/work/results/events:ro
+    ports:
+      - "127.0.0.1:18082:18080"
+    command: ["/usr/local/lib/python3.11/site-packages/pyspark/bin/spark-class", "org.apache.spark.deploy.history.HistoryServer"]
+volumes:
+  s3-data:

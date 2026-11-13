@@ -1,0 +1,130 @@
+Execution 21
+INITIAL
+== Physical Plan ==
+Execute InsertIntoHadoopFsRelationCommand (11)
++- WriteFiles (10)
+   +- * Project (9)
+      +- * BroadcastHashJoin Inner BuildRight (8)
+         :- * Filter (3)
+         :  +- * ColumnarToRow (2)
+         :     +- Scan parquet  (1)
+         +- BroadcastExchange (7)
+            +- * Filter (6)
+               +- * ColumnarToRow (5)
+                  +- Scan parquet  (4)
+
+
+(1) Scan parquet 
+Output [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/views]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<user_uid:bigint,element_uid:bigint,watched_time:bigint>
+
+(2) ColumnarToRow [codegen id : 2]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+
+(3) Filter [codegen id : 2]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Condition : isnotnull(element_uid#1L)
+
+(4) Scan parquet 
+Output [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/catalogue]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<attributes:array<bigint>,availability:array<string>,duration:bigint,element_uid:bigint,feature_1:double,feature_2:double,feature_3:bigint,feature_4:double,feature_5:double,type:string>
+
+(5) ColumnarToRow [codegen id : 1]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(6) Filter [codegen id : 1]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Condition : isnotnull(element_uid#9L)
+
+(7) BroadcastExchange
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Arguments: HashedRelationBroadcastMode(List(input[3, bigint, false]),false), [plan_id=1610]
+
+(8) BroadcastHashJoin [codegen id : 2]
+Left keys [1]: [element_uid#1L]
+Right keys [1]: [element_uid#9L]
+Join type: Inner
+Join condition: None
+
+(9) Project [codegen id : 2]
+Output [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Input [13]: [user_uid#0L, element_uid#1L, watched_time#2L, attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(10) WriteFiles
+Input [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(11) Execute InsertIntoHadoopFsRelationCommand
+Input: []
+Arguments: s3a://hw-2-2/results/task2/broadcast, false, Parquet, [path=s3a://hw-2-2/results/task2/broadcast], Overwrite, [element_uid, user_uid, watched_time, attributes, availability, duration, feature_1, feature_2, feature_3, feature_4, feature_5, type]
+
+
+FINAL
+== Physical Plan ==
+Execute InsertIntoHadoopFsRelationCommand (11)
++- WriteFiles (10)
+   +- * Project (9)
+      +- * BroadcastHashJoin Inner BuildRight (8)
+         :- * Filter (3)
+         :  +- * ColumnarToRow (2)
+         :     +- Scan parquet  (1)
+         +- BroadcastExchange (7)
+            +- * Filter (6)
+               +- * ColumnarToRow (5)
+                  +- Scan parquet  (4)
+
+
+(1) Scan parquet 
+Output [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/views]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<user_uid:bigint,element_uid:bigint,watched_time:bigint>
+
+(2) ColumnarToRow [codegen id : 2]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+
+(3) Filter [codegen id : 2]
+Input [3]: [user_uid#0L, element_uid#1L, watched_time#2L]
+Condition : isnotnull(element_uid#1L)
+
+(4) Scan parquet 
+Output [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task2/catalogue]
+PushedFilters: [IsNotNull(element_uid)]
+ReadSchema: struct<attributes:array<bigint>,availability:array<string>,duration:bigint,element_uid:bigint,feature_1:double,feature_2:double,feature_3:bigint,feature_4:double,feature_5:double,type:string>
+
+(5) ColumnarToRow [codegen id : 1]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(6) Filter [codegen id : 1]
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Condition : isnotnull(element_uid#9L)
+
+(7) BroadcastExchange
+Input [10]: [attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Arguments: HashedRelationBroadcastMode(List(input[3, bigint, false]),false), [plan_id=1610]
+
+(8) BroadcastHashJoin [codegen id : 2]
+Left keys [1]: [element_uid#1L]
+Right keys [1]: [element_uid#9L]
+Join type: Inner
+Join condition: None
+
+(9) Project [codegen id : 2]
+Output [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+Input [13]: [user_uid#0L, element_uid#1L, watched_time#2L, attributes#6, availability#7, duration#8L, element_uid#9L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(10) WriteFiles
+Input [12]: [element_uid#1L, user_uid#0L, watched_time#2L, attributes#6, availability#7, duration#8L, feature_1#10, feature_2#11, feature_3#12L, feature_4#13, feature_5#14, type#15]
+
+(11) Execute InsertIntoHadoopFsRelationCommand
+Input: []
+Arguments: s3a://hw-2-2/results/task2/broadcast, false, Parquet, [path=s3a://hw-2-2/results/task2/broadcast], Overwrite, [element_uid, user_uid, watched_time, attributes, availability, duration, feature_1, feature_2, feature_3, feature_4, feature_5, type]
+

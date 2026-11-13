@@ -1,0 +1,44 @@
+{
+  "rows": 500233,
+  "no_duplicate_campaign_user": true,
+  "equality": {
+    "auto": {
+      "rows": 500233,
+      "except_all_both_directions": true
+    },
+    "merge": {
+      "rows": 500233,
+      "except_all_both_directions": true
+    },
+    "broadcast": {
+      "rows": 500233,
+      "except_all_both_directions": true
+    },
+    "shuffle_hash": {
+      "rows": 500233,
+      "except_all_both_directions": true
+    }
+  },
+  "domains": [
+    {
+      "profile_domain": "inbox.example",
+      "count": 217348
+    },
+    {
+      "profile_domain": "post.example",
+      "count": 216747
+    },
+    {
+      "profile_domain": "webmail.example",
+      "count": 216539
+    },
+    {
+      "profile_domain": "mail.example",
+      "count": 215703
+    },
+    {
+      "profile_domain": "example.com",
+      "count": 214560
+    }
+  ]
+}

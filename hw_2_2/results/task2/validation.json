@@ -1,0 +1,22 @@
+{
+  "rows": 30070692,
+  "full_bag_equality": {
+    "broadcast": true,
+    "salt": true
+  },
+  "expected_rows": 30070692,
+  "all_columns": [
+    "element_uid",
+    "user_uid",
+    "watched_time",
+    "attributes",
+    "availability",
+    "duration",
+    "feature_1",
+    "feature_2",
+    "feature_3",
+    "feature_4",
+    "feature_5",
+    "type"
+  ]
+}

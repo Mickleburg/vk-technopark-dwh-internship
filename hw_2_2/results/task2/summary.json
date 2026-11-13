@@ -1,0 +1,44 @@
+[
+  {
+    "variant": "baseline",
+    "runs": 3,
+    "seconds_median": 67.60128896599053,
+    "seconds_min": 63.24812759397901,
+    "seconds_max": 70.77429607199156,
+    "files": 16,
+    "shuffle_read_bytes": 377825689,
+    "shuffle_write_bytes": 377825689,
+    "memory_spill_bytes": 687865200,
+    "disk_spill_bytes": 210506564,
+    "task_duration_ms_median": 2802,
+    "task_duration_ms_max": 56323
+  },
+  {
+    "variant": "broadcast",
+    "runs": 3,
+    "seconds_median": 39.17811948500457,
+    "seconds_min": 35.08310391599662,
+    "seconds_max": 40.01738668399048,
+    "files": 4,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "task_duration_ms_median": 27463,
+    "task_duration_ms_max": 36594
+  },
+  {
+    "variant": "salt",
+    "runs": 3,
+    "seconds_median": 49.15656690398464,
+    "seconds_min": 42.32126993400743,
+    "seconds_max": 62.360860365995904,
+    "files": 16,
+    "shuffle_read_bytes": 407567974,
+    "shuffle_write_bytes": 407567974,
+    "memory_spill_bytes": 671088000,
+    "disk_spill_bytes": 167274796,
+    "task_duration_ms_median": 4541,
+    "task_duration_ms_max": 29422
+  }
+]

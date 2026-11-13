@@ -1,0 +1,386 @@
+[
+  {
+    "stage": 30,
+    "labels": [
+      "task2:baseline:-1"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 3088.0,
+    "duration_ms_max": 51488,
+    "shuffle_read_records_median": 588613.0,
+    "shuffle_read_records_max": 21103014,
+    "shuffle_read_records_sum": 30080892
+  },
+  {
+    "stage": 28,
+    "labels": [
+      "task2:baseline:-1"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 162,
+    "duration_ms_max": 162,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 29,
+    "labels": [
+      "task2:baseline:-1"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 3321.0,
+    "duration_ms_max": 3655,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 31,
+    "labels": [
+      "task2:broadcast:-1"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 247,
+    "duration_ms_max": 247,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 32,
+    "labels": [
+      "task2:broadcast:-1"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 27232.5,
+    "duration_ms_max": 31202,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 33,
+    "labels": [
+      "task2:salt:-1"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 3423.0,
+    "duration_ms_max": 3456,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 34,
+    "labels": [
+      "task2:salt:-1"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 169,
+    "duration_ms_max": 169,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 35,
+    "labels": [
+      "task2:salt:-1"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 7273.5,
+    "duration_ms_max": 25126,
+    "shuffle_read_records_median": 1841674.0,
+    "shuffle_read_records_max": 5729518,
+    "shuffle_read_records_sum": 30080907
+  },
+  {
+    "stage": 37,
+    "labels": [
+      "task2:baseline:0"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 256,
+    "duration_ms_max": 256,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 38,
+    "labels": [
+      "task2:baseline:0"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 2740.0,
+    "duration_ms_max": 50919,
+    "shuffle_read_records_median": 588613.0,
+    "shuffle_read_records_max": 21103014,
+    "shuffle_read_records_sum": 30080892
+  },
+  {
+    "stage": 36,
+    "labels": [
+      "task2:baseline:0"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 4899.5,
+    "duration_ms_max": 5372,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 39,
+    "labels": [
+      "task2:broadcast:0"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 121,
+    "duration_ms_max": 121,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 40,
+    "labels": [
+      "task2:broadcast:0"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 28504.0,
+    "duration_ms_max": 36594,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 42,
+    "labels": [
+      "task2:salt:0"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 5001.0,
+    "duration_ms_max": 5244,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 43,
+    "labels": [
+      "task2:salt:0"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 10213.0,
+    "duration_ms_max": 35429,
+    "shuffle_read_records_median": 1841674.0,
+    "shuffle_read_records_max": 5729518,
+    "shuffle_read_records_sum": 30080907
+  },
+  {
+    "stage": 41,
+    "labels": [
+      "task2:salt:0"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 268,
+    "duration_ms_max": 268,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 44,
+    "labels": [
+      "task2:broadcast:1"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 81,
+    "duration_ms_max": 81,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 45,
+    "labels": [
+      "task2:broadcast:1"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 31016.0,
+    "duration_ms_max": 37118,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 48,
+    "labels": [
+      "task2:salt:1"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 8359.5,
+    "duration_ms_max": 29422,
+    "shuffle_read_records_median": 1841674.0,
+    "shuffle_read_records_max": 5729518,
+    "shuffle_read_records_sum": 30080907
+  },
+  {
+    "stage": 46,
+    "labels": [
+      "task2:salt:1"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 3571.5,
+    "duration_ms_max": 3751,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 47,
+    "labels": [
+      "task2:salt:1"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 146,
+    "duration_ms_max": 146,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 51,
+    "labels": [
+      "task2:baseline:1"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 3761.5,
+    "duration_ms_max": 56323,
+    "shuffle_read_records_median": 588613.0,
+    "shuffle_read_records_max": 21103014,
+    "shuffle_read_records_sum": 30080892
+  },
+  {
+    "stage": 49,
+    "labels": [
+      "task2:baseline:1"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 3189.0,
+    "duration_ms_max": 3760,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 50,
+    "labels": [
+      "task2:baseline:1"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 94,
+    "duration_ms_max": 94,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 52,
+    "labels": [
+      "task2:salt:2"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 129,
+    "duration_ms_max": 129,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 53,
+    "labels": [
+      "task2:salt:2"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 2836.0,
+    "duration_ms_max": 3035,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 54,
+    "labels": [
+      "task2:salt:2"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 7487.5,
+    "duration_ms_max": 26530,
+    "shuffle_read_records_median": 1841674.0,
+    "shuffle_read_records_max": 5729518,
+    "shuffle_read_records_sum": 30080907
+  },
+  {
+    "stage": 56,
+    "labels": [
+      "task2:baseline:2"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 111,
+    "duration_ms_max": 111,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 57,
+    "labels": [
+      "task2:baseline:2"
+    ],
+    "tasks": 16,
+    "duration_ms_median": 2826.5,
+    "duration_ms_max": 60601,
+    "shuffle_read_records_median": 588613.0,
+    "shuffle_read_records_max": 21103014,
+    "shuffle_read_records_sum": 30080892
+  },
+  {
+    "stage": 55,
+    "labels": [
+      "task2:baseline:2"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 2684.0,
+    "duration_ms_max": 3063,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 58,
+    "labels": [
+      "task2:broadcast:2"
+    ],
+    "tasks": 1,
+    "duration_ms_median": 107,
+    "duration_ms_max": 107,
+    "shuffle_read_records_median": 0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  },
+  {
+    "stage": 59,
+    "labels": [
+      "task2:broadcast:2"
+    ],
+    "tasks": 4,
+    "duration_ms_median": 28330.0,
+    "duration_ms_max": 32873,
+    "shuffle_read_records_median": 0.0,
+    "shuffle_read_records_max": 0,
+    "shuffle_read_records_sum": 0
+  }
+]

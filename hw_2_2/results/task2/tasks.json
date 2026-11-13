@@ -1,0 +1,2634 @@
+[
+  {
+    "stage": 28,
+    "task_index": 0,
+    "duration_ms": 162,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1110799,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 29,
+    "task_index": 1,
+    "duration_ms": 3272,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 94356787,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 29,
+    "task_index": 2,
+    "duration_ms": 3273,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86750508,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 29,
+    "task_index": 3,
+    "duration_ms": 3369,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86744369,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 29,
+    "task_index": 0,
+    "duration_ms": 3655,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 108863226,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 2,
+    "duration_ms": 3967,
+    "shuffle_read_bytes": 8193591,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 552180,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 3,
+    "duration_ms": 4312,
+    "shuffle_read_bytes": 9784988,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 654877,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 0,
+    "duration_ms": 4331,
+    "shuffle_read_bytes": 9569995,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 645675,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 1,
+    "duration_ms": 5022,
+    "shuffle_read_bytes": 11445835,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 779285,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 4,
+    "duration_ms": 3220,
+    "shuffle_read_bytes": 7568000,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508362,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 6,
+    "duration_ms": 3383,
+    "shuffle_read_bytes": 9142063,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 610245,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 5,
+    "duration_ms": 3429,
+    "shuffle_read_bytes": 9789759,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 658481,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 9,
+    "duration_ms": 2042,
+    "shuffle_read_bytes": 7861838,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 530492,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 10,
+    "duration_ms": 2021,
+    "shuffle_read_bytes": 7284469,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 491584,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 8,
+    "duration_ms": 2681,
+    "shuffle_read_bytes": 9663801,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 653204,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 12,
+    "duration_ms": 1664,
+    "shuffle_read_bytes": 6418356,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 425252,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 13,
+    "duration_ms": 2046,
+    "shuffle_read_bytes": 8165683,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 548517,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 11,
+    "duration_ms": 2263,
+    "shuffle_read_bytes": 8384659,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 562790,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 14,
+    "duration_ms": 2493,
+    "shuffle_read_bytes": 8411194,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 566981,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 15,
+    "duration_ms": 2956,
+    "shuffle_read_bytes": 11587263,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 789953,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 30,
+    "task_index": 7,
+    "duration_ms": 51488,
+    "shuffle_read_bytes": 244554195,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 21103014,
+    "memory_spill_bytes": 771751200,
+    "disk_spill_bytes": 235062767,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:-1"
+    ]
+  },
+  {
+    "stage": 31,
+    "task_index": 0,
+    "duration_ms": 247,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:broadcast:-1"
+    ]
+  },
+  {
+    "stage": 32,
+    "task_index": 2,
+    "duration_ms": 26145,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:broadcast:-1"
+    ]
+  },
+  {
+    "stage": 32,
+    "task_index": 1,
+    "duration_ms": 26755,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:broadcast:-1"
+    ]
+  },
+  {
+    "stage": 32,
+    "task_index": 3,
+    "duration_ms": 27710,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:broadcast:-1"
+    ]
+  },
+  {
+    "stage": 32,
+    "task_index": 0,
+    "duration_ms": 31202,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:broadcast:-1"
+    ]
+  },
+  {
+    "stage": 33,
+    "task_index": 2,
+    "duration_ms": 3138,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95740464,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 34,
+    "task_index": 0,
+    "duration_ms": 169,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1124140,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 33,
+    "task_index": 3,
+    "duration_ms": 3415,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95742280,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 33,
+    "task_index": 1,
+    "duration_ms": 3431,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 102027127,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 33,
+    "task_index": 0,
+    "duration_ms": 3456,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 112933963,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 0,
+    "duration_ms": 3248,
+    "shuffle_read_bytes": 10827727,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 705610,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 3,
+    "duration_ms": 7280,
+    "shuffle_read_bytes": 23627501,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1851933,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 4,
+    "duration_ms": 7034,
+    "shuffle_read_bytes": 24561665,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1909597,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 1,
+    "duration_ms": 12530,
+    "shuffle_read_bytes": 43303217,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3213996,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 32934029,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 5,
+    "duration_ms": 7267,
+    "shuffle_read_bytes": 23686074,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1881294,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 7,
+    "duration_ms": 2556,
+    "shuffle_read_bytes": 8246860,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 531687,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 8,
+    "duration_ms": 3271,
+    "shuffle_read_bytes": 10702842,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 693516,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 6,
+    "duration_ms": 7893,
+    "shuffle_read_bytes": 25109803,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1952232,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 9,
+    "duration_ms": 9067,
+    "shuffle_read_bytes": 23013144,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1831415,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 2,
+    "duration_ms": 25126,
+    "shuffle_read_bytes": 80534459,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 5729518,
+    "memory_spill_bytes": 268435200,
+    "disk_spill_bytes": 65384015,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 12,
+    "duration_ms": 3835,
+    "shuffle_read_bytes": 7814226,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 505663,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 11,
+    "duration_ms": 10387,
+    "shuffle_read_bytes": 21869493,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1759078,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 13,
+    "duration_ms": 3736,
+    "shuffle_read_bytes": 9980791,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 652234,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 15,
+    "duration_ms": 2160,
+    "shuffle_read_bytes": 7742608,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508371,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 10,
+    "duration_ms": 15167,
+    "shuffle_read_bytes": 43420061,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3231710,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 32827969,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 35,
+    "task_index": 14,
+    "duration_ms": 7908,
+    "shuffle_read_bytes": 43127503,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3123053,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:-1"
+    ]
+  },
+  {
+    "stage": 36,
+    "task_index": 2,
+    "duration_ms": 4603,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86750508,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 36,
+    "task_index": 3,
+    "duration_ms": 4812,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86744369,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 37,
+    "task_index": 0,
+    "duration_ms": 256,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1110799,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 36,
+    "task_index": 1,
+    "duration_ms": 4987,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 94356787,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 36,
+    "task_index": 0,
+    "duration_ms": 5372,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 108863226,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 3,
+    "duration_ms": 3404,
+    "shuffle_read_bytes": 9784988,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 654877,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 2,
+    "duration_ms": 3412,
+    "shuffle_read_bytes": 8193591,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 552180,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 0,
+    "duration_ms": 3529,
+    "shuffle_read_bytes": 9569995,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 645675,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 1,
+    "duration_ms": 3927,
+    "shuffle_read_bytes": 11445835,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 779285,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 4,
+    "duration_ms": 2247,
+    "shuffle_read_bytes": 7568000,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508362,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 5,
+    "duration_ms": 2802,
+    "shuffle_read_bytes": 9789759,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 658481,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 6,
+    "duration_ms": 2701,
+    "shuffle_read_bytes": 9142063,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 610245,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 10,
+    "duration_ms": 2503,
+    "shuffle_read_bytes": 7284469,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 491584,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 8,
+    "duration_ms": 3325,
+    "shuffle_read_bytes": 9663801,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 653204,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 9,
+    "duration_ms": 2779,
+    "shuffle_read_bytes": 7861838,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 530492,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 12,
+    "duration_ms": 1628,
+    "shuffle_read_bytes": 6418356,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 425252,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 11,
+    "duration_ms": 2118,
+    "shuffle_read_bytes": 8384659,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 562790,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 13,
+    "duration_ms": 2019,
+    "shuffle_read_bytes": 8165683,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 548517,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 14,
+    "duration_ms": 1812,
+    "shuffle_read_bytes": 8411194,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 566981,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 15,
+    "duration_ms": 2387,
+    "shuffle_read_bytes": 11587263,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 789953,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 38,
+    "task_index": 7,
+    "duration_ms": 50919,
+    "shuffle_read_bytes": 244554195,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 21103014,
+    "memory_spill_bytes": 805305600,
+    "disk_spill_bytes": 240519052,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:0"
+    ]
+  },
+  {
+    "stage": 39,
+    "task_index": 0,
+    "duration_ms": 121,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:broadcast:0"
+    ]
+  },
+  {
+    "stage": 40,
+    "task_index": 2,
+    "duration_ms": 25270,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:broadcast:0"
+    ]
+  },
+  {
+    "stage": 40,
+    "task_index": 3,
+    "duration_ms": 26063,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:broadcast:0"
+    ]
+  },
+  {
+    "stage": 40,
+    "task_index": 1,
+    "duration_ms": 30945,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:broadcast:0"
+    ]
+  },
+  {
+    "stage": 40,
+    "task_index": 0,
+    "duration_ms": 36594,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:broadcast:0"
+    ]
+  },
+  {
+    "stage": 41,
+    "task_index": 0,
+    "duration_ms": 268,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1124140,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 42,
+    "task_index": 2,
+    "duration_ms": 4838,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95740464,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 42,
+    "task_index": 3,
+    "duration_ms": 4647,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95742280,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 42,
+    "task_index": 1,
+    "duration_ms": 5164,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 102027127,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 42,
+    "task_index": 0,
+    "duration_ms": 5244,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 112933963,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 0,
+    "duration_ms": 6217,
+    "shuffle_read_bytes": 10827727,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 705610,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 3,
+    "duration_ms": 11454,
+    "shuffle_read_bytes": 23627501,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1851933,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 4,
+    "duration_ms": 9972,
+    "shuffle_read_bytes": 24561665,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1909597,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 1,
+    "duration_ms": 20642,
+    "shuffle_read_bytes": 43303217,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3213996,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 32934029,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 5,
+    "duration_ms": 10563,
+    "shuffle_read_bytes": 23686074,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1881294,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 7,
+    "duration_ms": 3428,
+    "shuffle_read_bytes": 8246860,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 531687,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 8,
+    "duration_ms": 3826,
+    "shuffle_read_bytes": 10702842,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 693516,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 6,
+    "duration_ms": 10751,
+    "shuffle_read_bytes": 25109803,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1952232,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 9,
+    "duration_ms": 9726,
+    "shuffle_read_bytes": 23013144,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1831415,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 2,
+    "duration_ms": 35429,
+    "shuffle_read_bytes": 80534459,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 5729518,
+    "memory_spill_bytes": 268435200,
+    "disk_spill_bytes": 65384015,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 11,
+    "duration_ms": 10454,
+    "shuffle_read_bytes": 21869493,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1759078,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 12,
+    "duration_ms": 4466,
+    "shuffle_read_bytes": 7814226,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 505663,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 13,
+    "duration_ms": 6926,
+    "shuffle_read_bytes": 9980791,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 652234,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 15,
+    "duration_ms": 4830,
+    "shuffle_read_bytes": 7742608,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508371,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 10,
+    "duration_ms": 19857,
+    "shuffle_read_bytes": 43420061,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3231710,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 35763638,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 43,
+    "task_index": 14,
+    "duration_ms": 14465,
+    "shuffle_read_bytes": 43127503,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3123053,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 33152335,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:0"
+    ]
+  },
+  {
+    "stage": 44,
+    "task_index": 0,
+    "duration_ms": 81,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:broadcast:1"
+    ]
+  },
+  {
+    "stage": 45,
+    "task_index": 2,
+    "duration_ms": 27605,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:broadcast:1"
+    ]
+  },
+  {
+    "stage": 45,
+    "task_index": 1,
+    "duration_ms": 30836,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:broadcast:1"
+    ]
+  },
+  {
+    "stage": 45,
+    "task_index": 3,
+    "duration_ms": 31196,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:broadcast:1"
+    ]
+  },
+  {
+    "stage": 45,
+    "task_index": 0,
+    "duration_ms": 37118,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:broadcast:1"
+    ]
+  },
+  {
+    "stage": 46,
+    "task_index": 2,
+    "duration_ms": 3432,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95740464,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 46,
+    "task_index": 1,
+    "duration_ms": 3460,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 102027127,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 47,
+    "task_index": 0,
+    "duration_ms": 146,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1124140,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 46,
+    "task_index": 3,
+    "duration_ms": 3683,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95742280,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 46,
+    "task_index": 0,
+    "duration_ms": 3751,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 112933963,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 0,
+    "duration_ms": 4541,
+    "shuffle_read_bytes": 10827727,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 705610,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 3,
+    "duration_ms": 9039,
+    "shuffle_read_bytes": 23627501,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1851933,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 4,
+    "duration_ms": 8445,
+    "shuffle_read_bytes": 24561665,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1909597,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 1,
+    "duration_ms": 14775,
+    "shuffle_read_bytes": 43303217,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3213996,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 32934029,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 5,
+    "duration_ms": 7992,
+    "shuffle_read_bytes": 23686074,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1881294,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 7,
+    "duration_ms": 2814,
+    "shuffle_read_bytes": 8246860,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 531687,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 8,
+    "duration_ms": 3695,
+    "shuffle_read_bytes": 10702842,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 693516,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 6,
+    "duration_ms": 8274,
+    "shuffle_read_bytes": 25109803,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1952232,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 9,
+    "duration_ms": 8835,
+    "shuffle_read_bytes": 23013144,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1831415,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 12,
+    "duration_ms": 2924,
+    "shuffle_read_bytes": 7814226,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 505663,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 2,
+    "duration_ms": 29422,
+    "shuffle_read_bytes": 80534459,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 5729518,
+    "memory_spill_bytes": 268435200,
+    "disk_spill_bytes": 65384015,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 11,
+    "duration_ms": 8995,
+    "shuffle_read_bytes": 21869493,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1759078,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 13,
+    "duration_ms": 3706,
+    "shuffle_read_bytes": 9980791,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 652234,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 15,
+    "duration_ms": 2821,
+    "shuffle_read_bytes": 7742608,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508371,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 10,
+    "duration_ms": 15451,
+    "shuffle_read_bytes": 43420061,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3231710,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 32827969,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 48,
+    "task_index": 14,
+    "duration_ms": 11052,
+    "shuffle_read_bytes": 43127503,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3123053,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 36128783,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:1"
+    ]
+  },
+  {
+    "stage": 49,
+    "task_index": 2,
+    "duration_ms": 3094,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86750508,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 49,
+    "task_index": 3,
+    "duration_ms": 3181,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86744369,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 50,
+    "task_index": 0,
+    "duration_ms": 94,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1110799,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 49,
+    "task_index": 1,
+    "duration_ms": 3197,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 94356787,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 49,
+    "task_index": 0,
+    "duration_ms": 3760,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 108863226,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 2,
+    "duration_ms": 3491,
+    "shuffle_read_bytes": 8193591,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 552180,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 0,
+    "duration_ms": 3938,
+    "shuffle_read_bytes": 9569995,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 645675,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 3,
+    "duration_ms": 3961,
+    "shuffle_read_bytes": 9784988,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 654877,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 1,
+    "duration_ms": 4145,
+    "shuffle_read_bytes": 11445835,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 779285,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 4,
+    "duration_ms": 2564,
+    "shuffle_read_bytes": 7568000,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508362,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 6,
+    "duration_ms": 4382,
+    "shuffle_read_bytes": 9142063,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 610245,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 5,
+    "duration_ms": 4429,
+    "shuffle_read_bytes": 9789759,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 658481,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 8,
+    "duration_ms": 5413,
+    "shuffle_read_bytes": 9663801,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 653204,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 10,
+    "duration_ms": 3743,
+    "shuffle_read_bytes": 7284469,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 491584,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 9,
+    "duration_ms": 3780,
+    "shuffle_read_bytes": 7861838,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 530492,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 12,
+    "duration_ms": 2661,
+    "shuffle_read_bytes": 6418356,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 425252,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 11,
+    "duration_ms": 3311,
+    "shuffle_read_bytes": 8384659,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 562790,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 13,
+    "duration_ms": 3088,
+    "shuffle_read_bytes": 8165683,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 548517,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 14,
+    "duration_ms": 2659,
+    "shuffle_read_bytes": 8411194,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 566981,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 15,
+    "duration_ms": 3211,
+    "shuffle_read_bytes": 11587263,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 789953,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 51,
+    "task_index": 7,
+    "duration_ms": 56323,
+    "shuffle_read_bytes": 244554195,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 21103014,
+    "memory_spill_bytes": 687865200,
+    "disk_spill_bytes": 210506564,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:1"
+    ]
+  },
+  {
+    "stage": 52,
+    "task_index": 0,
+    "duration_ms": 129,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1124140,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 53,
+    "task_index": 1,
+    "duration_ms": 2785,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 102027127,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 53,
+    "task_index": 2,
+    "duration_ms": 2841,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95740464,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 53,
+    "task_index": 3,
+    "duration_ms": 2831,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 95742280,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 53,
+    "task_index": 0,
+    "duration_ms": 3035,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 112933963,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 0,
+    "duration_ms": 4157,
+    "shuffle_read_bytes": 10827727,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 705610,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 3,
+    "duration_ms": 8816,
+    "shuffle_read_bytes": 23627501,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1851933,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 4,
+    "duration_ms": 8246,
+    "shuffle_read_bytes": 24561665,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1909597,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 1,
+    "duration_ms": 14984,
+    "shuffle_read_bytes": 43303217,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3213996,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 32934029,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 5,
+    "duration_ms": 7589,
+    "shuffle_read_bytes": 23686074,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1881294,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 7,
+    "duration_ms": 2399,
+    "shuffle_read_bytes": 8246860,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 531687,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 8,
+    "duration_ms": 3092,
+    "shuffle_read_bytes": 10702842,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 693516,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 6,
+    "duration_ms": 8000,
+    "shuffle_read_bytes": 25109803,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1952232,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 9,
+    "duration_ms": 7386,
+    "shuffle_read_bytes": 23013144,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1831415,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 2,
+    "duration_ms": 26530,
+    "shuffle_read_bytes": 80534459,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 5729518,
+    "memory_spill_bytes": 268435200,
+    "disk_spill_bytes": 65384015,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 12,
+    "duration_ms": 2510,
+    "shuffle_read_bytes": 7814226,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 505663,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 11,
+    "duration_ms": 7324,
+    "shuffle_read_bytes": 21869493,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 1759078,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 13,
+    "duration_ms": 3098,
+    "shuffle_read_bytes": 9980791,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 652234,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 15,
+    "duration_ms": 2377,
+    "shuffle_read_bytes": 7742608,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508371,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 10,
+    "duration_ms": 12877,
+    "shuffle_read_bytes": 43420061,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3231710,
+    "memory_spill_bytes": 268435328,
+    "disk_spill_bytes": 37845525,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 54,
+    "task_index": 14,
+    "duration_ms": 9168,
+    "shuffle_read_bytes": 43127503,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 3123053,
+    "memory_spill_bytes": 134217600,
+    "disk_spill_bytes": 33152335,
+    "input_records": 0,
+    "labels": [
+      "task2:salt:2"
+    ]
+  },
+  {
+    "stage": 55,
+    "task_index": 2,
+    "duration_ms": 2575,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86750508,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 55,
+    "task_index": 3,
+    "duration_ms": 2591,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 86744369,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 56,
+    "task_index": 0,
+    "duration_ms": 111,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 1110799,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 55,
+    "task_index": 1,
+    "duration_ms": 2777,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 94356787,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 55,
+    "task_index": 0,
+    "duration_ms": 3063,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 108863226,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 2,
+    "duration_ms": 3639,
+    "shuffle_read_bytes": 8193591,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 552180,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 3,
+    "duration_ms": 3657,
+    "shuffle_read_bytes": 9784988,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 654877,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 0,
+    "duration_ms": 3681,
+    "shuffle_read_bytes": 9569995,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 645675,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 1,
+    "duration_ms": 4353,
+    "shuffle_read_bytes": 11445835,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 779285,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 4,
+    "duration_ms": 2642,
+    "shuffle_read_bytes": 7568000,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 508362,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 5,
+    "duration_ms": 2863,
+    "shuffle_read_bytes": 9789759,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 658481,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 6,
+    "duration_ms": 2842,
+    "shuffle_read_bytes": 9142063,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 610245,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 10,
+    "duration_ms": 2422,
+    "shuffle_read_bytes": 7284469,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 491584,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 9,
+    "duration_ms": 2450,
+    "shuffle_read_bytes": 7861838,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 530492,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 8,
+    "duration_ms": 2903,
+    "shuffle_read_bytes": 9663801,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 653204,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 12,
+    "duration_ms": 1970,
+    "shuffle_read_bytes": 6418356,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 425252,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 11,
+    "duration_ms": 2811,
+    "shuffle_read_bytes": 8384659,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 562790,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 13,
+    "duration_ms": 2581,
+    "shuffle_read_bytes": 8165683,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 548517,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 14,
+    "duration_ms": 2223,
+    "shuffle_read_bytes": 8411194,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 566981,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 15,
+    "duration_ms": 2696,
+    "shuffle_read_bytes": 11587263,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 789953,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 57,
+    "task_index": 7,
+    "duration_ms": 60601,
+    "shuffle_read_bytes": 244554195,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 21103014,
+    "memory_spill_bytes": 687865200,
+    "disk_spill_bytes": 210505370,
+    "input_records": 0,
+    "labels": [
+      "task2:baseline:2"
+    ]
+  },
+  {
+    "stage": 58,
+    "task_index": 0,
+    "duration_ms": 107,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 10200,
+    "labels": [
+      "task2:broadcast:2"
+    ]
+  },
+  {
+    "stage": 59,
+    "task_index": 2,
+    "duration_ms": 26715,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547939,
+    "labels": [
+      "task2:broadcast:2"
+    ]
+  },
+  {
+    "stage": 59,
+    "task_index": 3,
+    "duration_ms": 27463,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7547743,
+    "labels": [
+      "task2:broadcast:2"
+    ]
+  },
+  {
+    "stage": 59,
+    "task_index": 1,
+    "duration_ms": 29197,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7579266,
+    "labels": [
+      "task2:broadcast:2"
+    ]
+  },
+  {
+    "stage": 59,
+    "task_index": 0,
+    "duration_ms": 32873,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "shuffle_read_records": 0,
+    "memory_spill_bytes": 0,
+    "disk_spill_bytes": 0,
+    "input_records": 7395744,
+    "labels": [
+      "task2:broadcast:2"
+    ]
+  }
+]

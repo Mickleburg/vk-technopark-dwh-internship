@@ -1,0 +1,118 @@
+{
+  "view_rows": 30070692,
+  "catalogue_rows": 10200,
+  "null_view_keys": 0,
+  "null_catalogue_keys": 0,
+  "duplicate_catalogue_keys": 0,
+  "unmatched_view_rows": 0,
+  "top_keys": [
+    {
+      "element_uid": 2714,
+      "count": 20496000,
+      "share": 0.6815938921525317
+    },
+    {
+      "element_uid": 747,
+      "count": 61272,
+      "share": 0.0020375986026527093
+    },
+    {
+      "element_uid": 2639,
+      "count": 61119,
+      "share": 0.002032510592040915
+    },
+    {
+      "element_uid": 3783,
+      "count": 55228,
+      "share": 0.0018366055560011722
+    },
+    {
+      "element_uid": 2245,
+      "count": 52942,
+      "share": 0.001760584691566127
+    },
+    {
+      "element_uid": 6127,
+      "count": 52168,
+      "share": 0.0017348453437652847
+    },
+    {
+      "element_uid": 10061,
+      "count": 48993,
+      "share": 0.001629260809827722
+    },
+    {
+      "element_uid": 3916,
+      "count": 48243,
+      "share": 0.0016043195813385338
+    },
+    {
+      "element_uid": 8771,
+      "count": 47480,
+      "share": 0.0015789460382221998
+    },
+    {
+      "element_uid": 3336,
+      "count": 45646,
+      "share": 0.0015179564208233052
+    },
+    {
+      "element_uid": 7079,
+      "count": 43872,
+      "share": 0.0014589621017035458
+    },
+    {
+      "element_uid": 3567,
+      "count": 42278,
+      "share": 0.0014059536774211913
+    },
+    {
+      "element_uid": 6195,
+      "count": 42192,
+      "share": 0.0014030937498877645
+    },
+    {
+      "element_uid": 4141,
+      "count": 41704,
+      "share": 0.0013868653238841328
+    },
+    {
+      "element_uid": 1016,
+      "count": 41539,
+      "share": 0.0013813782536165114
+    },
+    {
+      "element_uid": 7185,
+      "count": 39595,
+      "share": 0.001316730589372536
+    },
+    {
+      "element_uid": 1004,
+      "count": 38929,
+      "share": 0.0012945827784741368
+    },
+    {
+      "element_uid": 9467,
+      "count": 37207,
+      "share": 0.001237317717862961
+    },
+    {
+      "element_uid": 72,
+      "count": 36080,
+      "share": 0.001199839365186541
+    },
+    {
+      "element_uid": 1521,
+      "count": 35168,
+      "share": 0.0011695108313436885
+    }
+  ],
+  "hot_keys": [
+    2714
+  ],
+  "hot_threshold_share": 0.01,
+  "salt_buckets": 16,
+  "catalogue_json_payload_bytes": 2946392,
+  "salted_catalogue_rows": 10215,
+  "salt_policy": "Hot keys >=1%; each fact row gets one salt; matching dimension row is replicated to all 16 salts"
+}

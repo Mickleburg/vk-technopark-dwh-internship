@@ -1,0 +1,102 @@
+[
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 2,
+    "user_fio": "Megan Cook",
+    "user_email": "logan.roberts.2.r3@mail.example",
+    "user_login": "jthompson2"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 8,
+    "user_fio": "Brian White",
+    "user_email": "brian.white.8.r4@mail.example",
+    "user_login": "alee8r1"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 10,
+    "user_fio": "Justin Turner",
+    "user_email": "justin.turner.10.r6@mail.example",
+    "user_login": "lwright10r3"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 11,
+    "user_fio": "Adam Lee",
+    "user_email": "charlotte.nelson.11@mail.example",
+    "user_login": "smartinez11r3"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 14,
+    "user_fio": "Gabriel Johnson",
+    "user_email": "gabriel.johnson.14.r8@mail.example",
+    "user_login": "cjones14r1"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 24,
+    "user_fio": "Brian Hayes",
+    "user_email": "brian.hayes.24.r5@mail.example",
+    "user_login": "bhayes24r3"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 25,
+    "user_fio": "Chloe Griffin",
+    "user_email": "chloe.griffin.25.r6@mail.example",
+    "user_login": "ngonzalez25"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 27,
+    "user_fio": "Joseph Long",
+    "user_email": "joseph.long.27.r8@mail.example",
+    "user_login": "jlong27r9"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 34,
+    "user_fio": "Adrian Rodriguez",
+    "user_email": "austin.bell.34.r4@mail.example",
+    "user_login": "jturner34"
+  },
+  {
+    "campaign_id": 1,
+    "campaign_name": "Campaign_0001",
+    "send_at": "2026-02-04 09:25:59",
+    "email_domain": "mail.example",
+    "user_id": 36,
+    "user_fio": "Amelia Morgan",
+    "user_email": "aiden.thomas.36.r2@mail.example",
+    "user_login": "athomas36r4"
+  }
+]

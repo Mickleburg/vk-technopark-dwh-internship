@@ -1,0 +1,25 @@
+{
+  "rows": 1080897,
+  "source_rows": 5000000,
+  "path": "s3a://hw-2-2/input/task1/users_scd2",
+  "script": "/scd2project/scd2.py",
+  "format": "csv",
+  "columns": [
+    "event_time",
+    "user_id",
+    "user_fio",
+    "user_email",
+    "user_login"
+  ],
+  "total_rows": 5000000,
+  "rows_per_file": 100000,
+  "file_count": 50,
+  "user_count": 100000,
+  "user_id_start": 1,
+  "change_probability": 0.2,
+  "applied_profile_changes": 980897,
+  "seed": 42,
+  "first_event_time": "2026-01-01T00:00:01Z",
+  "last_event_time": "2026-02-27T20:53:20Z",
+  "elapsed_seconds": 70.748
+}

@@ -1,0 +1,55 @@
+{
+  "users": 100,
+  "unique_users": true,
+  "full_sample_preserved": true,
+  "independent_reference_equal": true,
+  "edge_cases_passed": true,
+  "nonnull_min_le_max": true,
+  "fixture": [
+    {
+      "user_uid": 1,
+      "feat_min_watched_time_rating_8": null,
+      "feat_max_watched_time_rating_8": null,
+      "feat_min_watched_time_rating_9": null,
+      "feat_max_watched_time_rating_9": null,
+      "feat_min_watched_time_rating_10": 5,
+      "feat_max_watched_time_rating_10": 5
+    },
+    {
+      "user_uid": 2,
+      "feat_min_watched_time_rating_8": 0,
+      "feat_max_watched_time_rating_8": 0,
+      "feat_min_watched_time_rating_9": 9,
+      "feat_max_watched_time_rating_9": 9,
+      "feat_min_watched_time_rating_10": null,
+      "feat_max_watched_time_rating_10": null
+    },
+    {
+      "user_uid": 3,
+      "feat_min_watched_time_rating_8": null,
+      "feat_max_watched_time_rating_8": null,
+      "feat_min_watched_time_rating_9": null,
+      "feat_max_watched_time_rating_9": null,
+      "feat_min_watched_time_rating_10": null,
+      "feat_max_watched_time_rating_10": null
+    },
+    {
+      "user_uid": 4,
+      "feat_min_watched_time_rating_8": null,
+      "feat_max_watched_time_rating_8": null,
+      "feat_min_watched_time_rating_9": null,
+      "feat_max_watched_time_rating_9": null,
+      "feat_min_watched_time_rating_10": null,
+      "feat_max_watched_time_rating_10": null
+    }
+  ],
+  "feature_columns": [
+    "feat_min_watched_time_rating_8",
+    "feat_max_watched_time_rating_8",
+    "feat_min_watched_time_rating_9",
+    "feat_max_watched_time_rating_9",
+    "feat_min_watched_time_rating_10",
+    "feat_max_watched_time_rating_10"
+  ],
+  "duration_policy": "sum watched_time by (user_uid, element_uid); source units"
+}

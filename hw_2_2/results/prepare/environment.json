@@ -1,0 +1,15 @@
+{
+  "spark": "3.5.3",
+  "master": "local[4]",
+  "driver_max_heap_bytes": 2147483648,
+  "cpu_task_slots": 4,
+  "executors": "local driver/executor in one JVM",
+  "executor_memory_setting": "1g (default; local mode shares driver heap)",
+  "default_settings": {
+    "spark.sql.adaptive.enabled": "true",
+    "spark.sql.autoBroadcastJoinThreshold": "10485760b",
+    "spark.sql.shuffle.partitions": "16"
+  },
+  "cache": "no DataFrame cache for any benchmark variant",
+  "write": "Parquet, snappy, overwrite, no coalesce; S3"
+}

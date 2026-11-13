@@ -1,0 +1,20 @@
+{
+  "users": {
+    "rows": 100,
+    "unique_keys": 100,
+    "duplicate_rows": 0,
+    "null_keys": 0
+  },
+  "views": {
+    "rows": 274385,
+    "unique_keys": 274385,
+    "duplicate_rows": 0,
+    "null_keys": 0
+  },
+  "ratings": {
+    "rows": 438790,
+    "unique_keys": 438790,
+    "duplicate_rows": 0,
+    "null_keys": 0
+  }
+}

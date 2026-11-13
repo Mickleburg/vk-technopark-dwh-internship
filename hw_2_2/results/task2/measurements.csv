@@ -1,0 +1,10 @@
+label,variant,iteration,seconds,files,output_path,shuffle_read_bytes,shuffle_write_bytes,memory_spill_bytes,disk_spill_bytes,task_duration_ms_median,task_duration_ms_max
+task2:baseline:0,baseline,0,63.24812759397901,16,s3a://hw-2-2/results/task2/baseline,377825689,377825689,805305600,240519052,2802,50919
+task2:broadcast:0,broadcast,0,39.17811948500457,4,s3a://hw-2-2/results/task2/broadcast,0,0,0,0,26063,36594
+task2:salt:0,salt,0,62.360860365995904,16,s3a://hw-2-2/results/task2/salt,407567974,407567974,671088000,167234017,6926,35429
+task2:broadcast:1,broadcast,1,40.01738668399048,4,s3a://hw-2-2/results/task2/broadcast,0,0,0,0,30836,37118
+task2:salt:1,salt,1,49.15656690398464,16,s3a://hw-2-2/results/task2/salt,407567974,407567974,671088000,167274796,4541,29422
+task2:baseline:1,baseline,1,67.60128896599053,16,s3a://hw-2-2/results/task2/baseline,377825689,377825689,687865200,210506564,3491,56323
+task2:salt:2,salt,2,42.32126993400743,16,s3a://hw-2-2/results/task2/salt,407567974,407567974,805305728,169315904,4157,26530
+task2:baseline:2,baseline,2,70.77429607199156,16,s3a://hw-2-2/results/task2/baseline,377825689,377825689,687865200,210505370,2777,60601
+task2:broadcast:2,broadcast,2,35.08310391599662,4,s3a://hw-2-2/results/task2/broadcast,0,0,0,0,27463,32873

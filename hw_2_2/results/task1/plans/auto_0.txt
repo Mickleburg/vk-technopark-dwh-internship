@@ -1,0 +1,195 @@
+Execution 6
+INITIAL
+== Physical Plan ==
+AdaptiveSparkPlan (11)
++- Execute InsertIntoHadoopFsRelationCommand (10)
+   +- WriteFiles (9)
+      +- Project (8)
+         +- BroadcastHashJoin Inner BuildRight (7)
+            :- Project (3)
+            :  +- Filter (2)
+            :     +- Scan parquet  (1)
+            +- BroadcastExchange (6)
+               +- Filter (5)
+                  +- Scan csv  (4)
+
+
+(1) Scan parquet 
+Output [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task1/users_scd2]
+PushedFilters: [IsNotNull(valid_from)]
+ReadSchema: struct<user_id:bigint,user_fio:string,user_email:string,user_login:string,valid_from:timestamp,valid_to:timestamp>
+
+(2) Filter
+Input [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+Condition : (isnotnull(lower(element_at(split(user_email#28, @, -1), -1, None, false))) AND isnotnull(valid_from#30))
+
+(3) Project
+Output [7]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31, lower(element_at(split(user_email#28, @, -1), -1, None, false)) AS profile_domain#40]
+Input [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+
+(4) Scan csv 
+Output [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Batched: false
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task1/campaigns.csv]
+PushedFilters: [IsNotNull(email_domain), IsNotNull(send_at)]
+ReadSchema: struct<campaign_id:int,email_domain:string,send_at:timestamp,campaign_name:string>
+
+(5) Filter
+Input [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Condition : (isnotnull(email_domain#1) AND isnotnull(send_at#2))
+
+(6) BroadcastExchange
+Input [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Arguments: HashedRelationBroadcastMode(List(input[1, string, false]),false), [plan_id=493]
+
+(7) BroadcastHashJoin
+Left keys [1]: [profile_domain#40]
+Right keys [1]: [email_domain#1]
+Join type: Inner
+Join condition: ((valid_from#30 <= send_at#2) AND (isnull(valid_to#31) OR (send_at#2 < valid_to#31)))
+
+(8) Project
+Output [8]: [campaign_id#0, campaign_name#3, send_at#2, email_domain#1, user_id#26L, user_fio#27, user_email#28, user_login#29]
+Input [11]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31, profile_domain#40, campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+
+(9) WriteFiles
+Input [8]: [campaign_id#0, campaign_name#3, send_at#2, email_domain#1, user_id#26L, user_fio#27, user_email#28, user_login#29]
+
+(10) Execute InsertIntoHadoopFsRelationCommand
+Input: []
+Arguments: s3a://hw-2-2/results/task1/auto, false, Parquet, [path=s3a://hw-2-2/results/task1/auto], Overwrite, [campaign_id, campaign_name, send_at, email_domain, user_id, user_fio, user_email, user_login]
+
+(11) AdaptiveSparkPlan
+Output: []
+Arguments: isFinalPlan=false
+
+
+FINAL
+== Physical Plan ==
+AdaptiveSparkPlan (22)
++- == Final Plan ==
+   Execute InsertIntoHadoopFsRelationCommand (12)
+   +- WriteFiles (11)
+      +- * Project (10)
+         +- * BroadcastHashJoin Inner BuildRight (9)
+            :- * Project (4)
+            :  +- * Filter (3)
+            :     +- * ColumnarToRow (2)
+            :        +- Scan parquet  (1)
+            +- BroadcastQueryStage (8), Statistics(sizeInBytes=16.0 MiB, rowCount=25)
+               +- BroadcastExchange (7)
+                  +- * Filter (6)
+                     +- Scan csv  (5)
++- == Initial Plan ==
+   Execute InsertIntoHadoopFsRelationCommand (21)
+   +- WriteFiles (20)
+      +- Project (19)
+         +- BroadcastHashJoin Inner BuildRight (18)
+            :- Project (15)
+            :  +- Filter (14)
+            :     +- Scan parquet  (13)
+            +- BroadcastExchange (17)
+               +- Filter (16)
+                  +- Scan csv  (5)
+
+
+(1) Scan parquet 
+Output [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task1/users_scd2]
+PushedFilters: [IsNotNull(valid_from)]
+ReadSchema: struct<user_id:bigint,user_fio:string,user_email:string,user_login:string,valid_from:timestamp,valid_to:timestamp>
+
+(2) ColumnarToRow [codegen id : 2]
+Input [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+
+(3) Filter [codegen id : 2]
+Input [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+Condition : (isnotnull(lower(element_at(split(user_email#28, @, -1), -1, None, false))) AND isnotnull(valid_from#30))
+
+(4) Project [codegen id : 2]
+Output [7]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31, lower(element_at(split(user_email#28, @, -1), -1, None, false)) AS profile_domain#40]
+Input [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+
+(5) Scan csv 
+Output [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Batched: false
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task1/campaigns.csv]
+PushedFilters: [IsNotNull(email_domain), IsNotNull(send_at)]
+ReadSchema: struct<campaign_id:int,email_domain:string,send_at:timestamp,campaign_name:string>
+
+(6) Filter [codegen id : 1]
+Input [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Condition : (isnotnull(email_domain#1) AND isnotnull(send_at#2))
+
+(7) BroadcastExchange
+Input [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Arguments: HashedRelationBroadcastMode(List(input[1, string, false]),false), [plan_id=505]
+
+(8) BroadcastQueryStage
+Output [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Arguments: 0
+
+(9) BroadcastHashJoin [codegen id : 2]
+Left keys [1]: [profile_domain#40]
+Right keys [1]: [email_domain#1]
+Join type: Inner
+Join condition: ((valid_from#30 <= send_at#2) AND (isnull(valid_to#31) OR (send_at#2 < valid_to#31)))
+
+(10) Project [codegen id : 2]
+Output [8]: [campaign_id#0, campaign_name#3, send_at#2, email_domain#1, user_id#26L, user_fio#27, user_email#28, user_login#29]
+Input [11]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31, profile_domain#40, campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+
+(11) WriteFiles
+Input [8]: [campaign_id#0, campaign_name#3, send_at#2, email_domain#1, user_id#26L, user_fio#27, user_email#28, user_login#29]
+
+(12) Execute InsertIntoHadoopFsRelationCommand
+Input: []
+Arguments: s3a://hw-2-2/results/task1/auto, false, Parquet, [path=s3a://hw-2-2/results/task1/auto], Overwrite, [campaign_id, campaign_name, send_at, email_domain, user_id, user_fio, user_email, user_login]
+
+(13) Scan parquet 
+Output [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+Batched: true
+Location: InMemoryFileIndex [s3a://hw-2-2/input/task1/users_scd2]
+PushedFilters: [IsNotNull(valid_from)]
+ReadSchema: struct<user_id:bigint,user_fio:string,user_email:string,user_login:string,valid_from:timestamp,valid_to:timestamp>
+
+(14) Filter
+Input [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+Condition : (isnotnull(lower(element_at(split(user_email#28, @, -1), -1, None, false))) AND isnotnull(valid_from#30))
+
+(15) Project
+Output [7]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31, lower(element_at(split(user_email#28, @, -1), -1, None, false)) AS profile_domain#40]
+Input [6]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31]
+
+(16) Filter
+Input [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Condition : (isnotnull(email_domain#1) AND isnotnull(send_at#2))
+
+(17) BroadcastExchange
+Input [4]: [campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+Arguments: HashedRelationBroadcastMode(List(input[1, string, false]),false), [plan_id=493]
+
+(18) BroadcastHashJoin
+Left keys [1]: [profile_domain#40]
+Right keys [1]: [email_domain#1]
+Join type: Inner
+Join condition: ((valid_from#30 <= send_at#2) AND (isnull(valid_to#31) OR (send_at#2 < valid_to#31)))
+
+(19) Project
+Output [8]: [campaign_id#0, campaign_name#3, send_at#2, email_domain#1, user_id#26L, user_fio#27, user_email#28, user_login#29]
+Input [11]: [user_id#26L, user_fio#27, user_email#28, user_login#29, valid_from#30, valid_to#31, profile_domain#40, campaign_id#0, email_domain#1, send_at#2, campaign_name#3]
+
+(20) WriteFiles
+Input [8]: [campaign_id#0, campaign_name#3, send_at#2, email_domain#1, user_id#26L, user_fio#27, user_email#28, user_login#29]
+
+(21) Execute InsertIntoHadoopFsRelationCommand
+Input: []
+Arguments: s3a://hw-2-2/results/task1/auto, false, Parquet, [path=s3a://hw-2-2/results/task1/auto], Overwrite, [campaign_id, campaign_name, send_at, email_domain, user_id, user_fio, user_email, user_login]
+
+(22) AdaptiveSparkPlan
+Output: []
+Arguments: isFinalPlan=true
+

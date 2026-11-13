@@ -1,0 +1,52 @@
+{
+  "format": "split_zip",
+  "parts": [
+    {
+      "name": "datasets.zip.001",
+      "bytes": 83886080,
+      "sha256": "dc8f28109c3a4d2509a33f9e22adf943d2d68dcce35140d652a804b77431d70e"
+    },
+    {
+      "name": "datasets.zip.002",
+      "bytes": 83886080,
+      "sha256": "f0348208644bdaf54a99ad0a0f09b50e6e10b517e4755287e96eae4468d8383d"
+    },
+    {
+      "name": "datasets.zip.003",
+      "bytes": 37735042,
+      "sha256": "104fea152791c75f66dcba673acd3d96a985ef04f38003959cad3e5e8e19f65e"
+    }
+  ],
+  "files": [
+    {
+      "name": "task1/campaigns.csv",
+      "bytes": 1328,
+      "sha256": "889e88f6e674b1b23ad1e622ff107ab2359e851b8f7ab634ca1b25b3e51cccfb"
+    },
+    {
+      "name": "task2/catalogue.json",
+      "bytes": 2831017,
+      "sha256": "0eb68221cdfa0fe1a2f3244d9688822d4df49486f496fb90ac1fdc9878e6b9c8"
+    },
+    {
+      "name": "task2/skew_transactions.csv",
+      "bytes": 497815227,
+      "sha256": "37faf2550334c6448c090dd82bccffe2f7df0449170575f798f37c65fcc7a61e"
+    },
+    {
+      "name": "task3/ids.csv",
+      "bytes": 689,
+      "sha256": "837b4d775c42c4d400d174c277906ff8a629607295abe9d52e9220cabd36d136"
+    },
+    {
+      "name": "task3/cut_transactions.csv",
+      "bytes": 4456781,
+      "sha256": "07e1c34e9763a66f1f01803d9f4e0d32b313bd06ecaf7705e2da90d4a41a8738"
+    },
+    {
+      "name": "task3/cut_ratings.csv",
+      "bytes": 14158500,
+      "sha256": "2cbd914de35f6a35d003b15b9bba4a9c469a02c20c1e9509648967d9c69958c4"
+    }
+  ]
+}

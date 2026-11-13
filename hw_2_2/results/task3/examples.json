@@ -1,0 +1,42 @@
+[
+  {
+    "ratings_present": 0,
+    "user_uid": 8504,
+    "feat_min_watched_time_rating_8": null,
+    "feat_max_watched_time_rating_8": null,
+    "feat_min_watched_time_rating_9": null,
+    "feat_max_watched_time_rating_9": null,
+    "feat_min_watched_time_rating_10": null,
+    "feat_max_watched_time_rating_10": null
+  },
+  {
+    "ratings_present": 1,
+    "user_uid": 55511,
+    "feat_min_watched_time_rating_8": null,
+    "feat_max_watched_time_rating_8": null,
+    "feat_min_watched_time_rating_9": 1293,
+    "feat_max_watched_time_rating_9": 1293,
+    "feat_min_watched_time_rating_10": null,
+    "feat_max_watched_time_rating_10": null
+  },
+  {
+    "ratings_present": 2,
+    "user_uid": 24124,
+    "feat_min_watched_time_rating_8": 16,
+    "feat_max_watched_time_rating_8": 16,
+    "feat_min_watched_time_rating_9": 1575,
+    "feat_max_watched_time_rating_9": 2578,
+    "feat_min_watched_time_rating_10": null,
+    "feat_max_watched_time_rating_10": null
+  },
+  {
+    "ratings_present": 3,
+    "user_uid": 110138,
+    "feat_min_watched_time_rating_8": 11682,
+    "feat_max_watched_time_rating_8": 11682,
+    "feat_min_watched_time_rating_9": 5160,
+    "feat_max_watched_time_rating_9": 5160,
+    "feat_min_watched_time_rating_10": 4569,
+    "feat_max_watched_time_rating_10": 8599
+  }
+]
